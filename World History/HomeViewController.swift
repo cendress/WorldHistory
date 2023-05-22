@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     stackView.layer.cornerRadius = 25.0
     
     for button in timePeriodButtons {
-      button.layer.cornerRadius = 35.0
+      button.layer.cornerRadius = 25.0
       button.layer.borderWidth = 4
       button.layer.borderColor = UIColor.white.cgColor
       button.layer.shadowColor = UIColor.black.cgColor

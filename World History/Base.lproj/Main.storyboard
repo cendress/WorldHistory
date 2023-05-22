@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0c1-oG-Wva">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--World History-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,67 +18,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-Iv-Pdw">
-                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <rect key="frame" x="20" y="155" width="353" height="663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujt-wa-tXn">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="105.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="89.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Prehistoric Times">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNF-wV-4jc">
-                                        <rect key="frame" x="0.0" y="130.66666666666666" width="353" height="105.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="114.66666666666669" width="353" height="89.666666666666686"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ancient Civilizations">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaV-9E-1AW">
-                                        <rect key="frame" x="0.0" y="261.33333333333331" width="353" height="105.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="229.33333333333329" width="353" height="89.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Post-Classical Era">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyf-gm-Seq">
-                                        <rect key="frame" x="0.0" y="392" width="353" height="105.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="344" width="353" height="89.666666666666686"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Early Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYV-mu-tPH">
-                                        <rect key="frame" x="0.0" y="522.66666666666663" width="353" height="105.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="458.66666666666663" width="353" height="89.666666666666629"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho2-AJ-KXE">
-                                        <rect key="frame" x="0.0" y="653.33333333333337" width="353" height="105.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="573.33333333333337" width="353" height="89.666666666666629"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Contemporary Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="TextColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LVh-Iv-Pdw" secondAttribute="bottom" id="193-NU-BM1"/>
                             <constraint firstItem="LVh-Iv-Pdw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5S9-hK-WzQ"/>
@@ -85,6 +86,7 @@
                             <constraint firstItem="LVh-Iv-Pdw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lO8-eY-Zw5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="World History" id="Gbv-iM-GuV"/>
                     <connections>
                         <outlet property="stackView" destination="LVh-Iv-Pdw" id="ywm-ff-ipY"/>
                         <outletCollection property="timePeriodButtons" destination="tyf-gm-Seq" collectionClass="NSMutableArray" id="dDk-Eh-Htv"/>
@@ -97,6 +99,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tMp-V5-MSd">
+            <objects>
+                <viewController id="0De-O2-O6u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSD-JN-bqr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hiR-RV-Aoe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJV-QD-5So" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6hN-ia-DOy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0c1-oG-Wva" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="U90-yf-emv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IIh-7v-cWo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqc-wJ-KSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
     </scenes>
@@ -104,8 +142,14 @@
         <namedColor name="BackgroundColor">
             <color red="0.32549019607843138" green="0.44313725490196076" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="BackgroundColor2">
+            <color red="0.79607843137254897" green="0.69803921568627447" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TextColor">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
