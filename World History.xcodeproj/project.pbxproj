@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D162D312A1CF2AD0023A80D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D302A1CF2AD0023A80D /* MapViewController.swift */; };
+		9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D322A1CF2E10023A80D /* ReadViewController.swift */; };
+		9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */; };
+		9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D362A1CF3E90023A80D /* QuizViewController.swift */; };
 		9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */; };
 		9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */; };
 		9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D162D302A1CF2AD0023A80D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9D162D322A1CF2E10023A80D /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTableViewController.swift; sourceTree = "<group>"; };
+		9D162D362A1CF3E90023A80D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9D45A9A22A1BB2B8006524DA /* World History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D162D2C2A1CF2190023A80D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */,
+				9D162D302A1CF2AD0023A80D /* MapViewController.swift */,
+				9D162D322A1CF2E10023A80D /* ReadViewController.swift */,
+				9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */,
+				9D162D362A1CF3E90023A80D /* QuizViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D162D2D2A1CF2390023A80D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A9AB2A1BB2B8006524DA /* Main.storyboard */,
+				9D45A9B32A1BB2B9006524DA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D162D2E2A1CF2640023A80D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		9D162D2F2A1CF27C0023A80D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */,
+				9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */,
+				9D45A9B12A1BB2B9006524DA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9D45A9992A1BB2B8006524DA = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +105,11 @@
 		9D45A9A42A1BB2B8006524DA /* World History */ = {
 			isa = PBXGroup;
 			children = (
-				9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */,
-				9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */,
-				9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */,
-				9D45A9AB2A1BB2B8006524DA /* Main.storyboard */,
-				9D45A9B12A1BB2B9006524DA /* Assets.xcassets */,
-				9D45A9B32A1BB2B9006524DA /* LaunchScreen.storyboard */,
+				9D162D2F2A1CF27C0023A80D /* Resources */,
+				9D162D2C2A1CF2190023A80D /* Controllers */,
+				9D162D2D2A1CF2390023A80D /* Views */,
+				9D162D2E2A1CF2640023A80D /* Core Data */,
 				9D45A9B62A1BB2B9006524DA /* Info.plist */,
-				9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */,
 			);
 			path = "World History";
 			sourceTree = "<group>";
@@ -143,7 +187,11 @@
 			files = (
 				9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */,
 				9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */,
+				9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */,
+				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
+				9D162D312A1CF2AD0023A80D /* MapViewController.swift in Sources */,
+				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
 				9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
