@@ -12,8 +12,11 @@ class ReadViewController: UIViewController {
   
   let text = ReadingText()
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      textLabel.text = text.prehistoryText
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tabBarController?.tabBar.isTranslucent = false
+    tabBarController?.tabBar.barTintColor = UIColor(named: "BackgroundColor2")
+    
+    textLabel.text = text.prehistoryText
+  }
 }

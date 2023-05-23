@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EjC-Xw-toR">
-                                <rect key="frame" x="20" y="64" width="353" height="719"/>
+                                <rect key="frame" x="20" y="116" width="353" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12B-f4-MMJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="90.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Prehistory">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-Rr-qAn">
-                                        <rect key="frame" x="0.0" y="124" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="115.33333333333334" width="353" height="90.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ancient History">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -42,7 +42,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-4A-Y5R">
-                                        <rect key="frame" x="0.0" y="248" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="230.66666666666671" width="353" height="90.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Post-Classical Era">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -51,7 +51,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-eF-nWQ">
-                                        <rect key="frame" x="0.0" y="372" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="346" width="353" height="90.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Early Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -60,7 +60,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3t-Gg-kLC">
-                                        <rect key="frame" x="0.0" y="496" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="461.33333333333337" width="353" height="90.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -69,7 +69,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-q1-uUA">
-                                        <rect key="frame" x="0.0" y="620" width="353" height="99"/>
+                                        <rect key="frame" x="0.0" y="576.66666666666663" width="353" height="90.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Contemporary Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -120,42 +120,33 @@
             </objects>
             <point key="canvasLocation" x="1210" y="524"/>
         </scene>
-        <!--Read View Controller-->
+        <!--Prehistory-->
         <scene sceneID="9yg-mm-r9a">
             <objects>
                 <viewController id="kzj-Ix-aGz" customClass="ReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftq-AQ-FEO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njg-Oq-aoe">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-RA-dtr">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="9600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="9500"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prehistory" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDi-p6-d5A">
-                                                <rect key="frame" x="10" y="29.999999999999996" width="373" height="54.666666666666657"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
-                                                <color key="textColor" name="BackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-sr-fwi">
-                                                <rect key="frame" x="10" y="124.66666666666669" width="373" height="29"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
-                                                <color key="textColor" name="BackgroundColor"/>
+                                                <rect key="frame" x="10" y="9.9999999999999982" width="373" height="27.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" name="TextColor"/>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="uoc-sr-fwi" secondAttribute="trailing" constant="10" id="Eow-c0-SGz"/>
-                                            <constraint firstItem="pDi-p6-d5A" firstAttribute="leading" secondItem="tX5-RA-dtr" secondAttribute="leading" constant="10" id="Hfw-JO-Adt"/>
-                                            <constraint firstAttribute="trailing" secondItem="pDi-p6-d5A" secondAttribute="trailing" constant="10" id="Ob3-Xb-FNK"/>
+                                            <constraint firstItem="uoc-sr-fwi" firstAttribute="top" secondItem="tX5-RA-dtr" secondAttribute="top" constant="10" id="GKU-6k-aV2"/>
                                             <constraint firstItem="uoc-sr-fwi" firstAttribute="leading" secondItem="tX5-RA-dtr" secondAttribute="leading" constant="10" id="gxY-ob-Ee3"/>
-                                            <constraint firstItem="pDi-p6-d5A" firstAttribute="top" secondItem="tX5-RA-dtr" secondAttribute="top" constant="30" id="ljz-mp-nXI"/>
-                                            <constraint firstAttribute="height" constant="9600" id="opq-rI-Otg"/>
-                                            <constraint firstItem="uoc-sr-fwi" firstAttribute="top" secondItem="pDi-p6-d5A" secondAttribute="bottom" constant="40" id="tpU-KX-Fu3"/>
+                                            <constraint firstAttribute="height" constant="9500" id="opq-rI-Otg"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -170,15 +161,15 @@
                         <viewLayoutGuide key="safeArea" id="7td-hG-GFd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="3be-F9-GNe"/>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="11.2676" id="52h-f1-P2L"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="trailing" secondItem="7td-hG-GFd" secondAttribute="trailing" id="Ahx-bb-c7t"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="12.5661" id="Snp-N4-fy1"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="bottom" secondItem="7td-hG-GFd" secondAttribute="bottom" id="dEl-qb-DtS"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="fzV-Hk-oF0"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="leading" secondItem="7td-hG-GFd" secondAttribute="leading" id="gUr-d0-fBm"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="top" secondItem="ftq-AQ-FEO" secondAttribute="top" id="hHa-co-mcS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1u6-lF-Zsb"/>
+                    <navigationItem key="navigationItem" title="Prehistory" id="1u6-lF-Zsb"/>
                     <connections>
                         <outlet property="textLabel" destination="uoc-sr-fwi" id="TIA-C4-b9K"/>
                     </connections>
@@ -187,22 +178,23 @@
             </objects>
             <point key="canvasLocation" x="1983.9694656488548" y="523.94366197183103"/>
         </scene>
-        <!--Vocabulary Table View Controller-->
+        <!--Vocabulary-->
         <scene sceneID="F7y-LN-Xfn">
             <objects>
                 <tableViewController id="kYv-oq-UlP" customClass="VocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6ss-l4-c1A">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TermCell" id="p5L-vp-GKD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="p5L-vp-GKD">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p5L-vp-GKD" id="QQH-Hw-Z6e">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" name="TextColor"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -210,11 +202,11 @@
                             <outlet property="delegate" destination="kYv-oq-UlP" id="JGo-v8-tR9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="h9O-37-taG"/>
+                    <navigationItem key="navigationItem" title="Vocabulary" id="h9O-37-taG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Noo-tT-pER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2778" y="524"/>
+            <point key="canvasLocation" x="2777.8625954198474" y="523.94366197183103"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="NuS-cp-e5P">
@@ -277,11 +269,13 @@
             <objects>
                 <navigationController id="fub-hP-cdV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="HN3-0h-2Y9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K0y-BR-8PF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="K0y-BR-8PF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="TextColor"/>
                         </textAttributes>
                     </navigationBar>
@@ -315,9 +309,17 @@
             <objects>
                 <navigationController id="63P-hm-IzR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="773-oo-eex"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XO1-pt-VCY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="XO1-pt-VCY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="barTintColor" name="BackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="kYv-oq-UlP" kind="relationship" relationship="rootViewController" id="0WN-Ei-2hQ"/>
@@ -332,9 +334,17 @@
             <objects>
                 <navigationController id="uNL-L1-LXp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="o9W-Pw-HSx"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bR1-8k-Zyn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="bR1-8k-Zyn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="barTintColor" name="BackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="kzj-Ix-aGz" kind="relationship" relationship="rootViewController" id="FQh-Lo-6QS"/>

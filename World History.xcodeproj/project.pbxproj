@@ -12,6 +12,7 @@
 		9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */; };
 		9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D362A1CF3E90023A80D /* QuizViewController.swift */; };
 		9D162D392A1D09CF0023A80D /* ReadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D382A1D09CF0023A80D /* ReadingText.swift */; };
+		9D162D3C2A1D49130023A80D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D3B2A1D49130023A80D /* DefinitionViewController.swift */; };
 		9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */; };
 		9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */; };
 		9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */; };
@@ -27,6 +28,7 @@
 		9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTableViewController.swift; sourceTree = "<group>"; };
 		9D162D362A1CF3E90023A80D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9D162D382A1D09CF0023A80D /* ReadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingText.swift; sourceTree = "<group>"; };
+		9D162D3B2A1D49130023A80D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		9D45A9A22A1BB2B8006524DA /* World History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				9D162D302A1CF2AD0023A80D /* MapViewController.swift */,
 				9D162D322A1CF2E10023A80D /* ReadViewController.swift */,
 				9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */,
+				9D162D3B2A1D49130023A80D /* DefinitionViewController.swift */,
 				9D162D362A1CF3E90023A80D /* QuizViewController.swift */,
 			);
 			path = Controllers;
@@ -205,6 +208,7 @@
 				9D162D312A1CF2AD0023A80D /* MapViewController.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
 				9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */,
+				9D162D3C2A1D49130023A80D /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
