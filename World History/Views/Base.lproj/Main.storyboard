@@ -146,7 +146,6 @@
                                             <constraint firstAttribute="trailing" secondItem="uoc-sr-fwi" secondAttribute="trailing" constant="10" id="Eow-c0-SGz"/>
                                             <constraint firstItem="uoc-sr-fwi" firstAttribute="top" secondItem="tX5-RA-dtr" secondAttribute="top" constant="10" id="GKU-6k-aV2"/>
                                             <constraint firstItem="uoc-sr-fwi" firstAttribute="leading" secondItem="tX5-RA-dtr" secondAttribute="leading" constant="10" id="gxY-ob-Ee3"/>
-                                            <constraint firstAttribute="height" constant="9500" id="opq-rI-Otg"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -208,26 +207,135 @@
             </objects>
             <point key="canvasLocation" x="2777.8625954198474" y="523.94366197183103"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Quiz-->
         <scene sceneID="NuS-cp-e5P">
             <objects>
                 <viewController id="kPr-fy-Pab" customClass="QuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6n-jH-yjX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3GS-4n-FdG">
+                                <rect key="frame" x="20" y="0.0" width="353" height="697"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyM-nU-I40">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="49"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-3Y-WPv">
+                                        <rect key="frame" x="0.0" y="59" width="353" height="49"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-IP-L6Q">
+                                        <rect key="frame" x="0.0" y="118" width="353" height="279"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-mt-47O">
+                                        <rect key="frame" x="0.0" y="407" width="353" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3j9-MP-7vV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                            <color key="baseForegroundColor" name="TextColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="quizButtonPressed:" destination="kPr-fy-Pab" eventType="touchUpInside" id="6F0-Vc-vjz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-bR-uab">
+                                        <rect key="frame" x="0.0" y="477" width="353" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="jIR-QF-jOj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                            <color key="baseForegroundColor" name="TextColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="quizButtonPressed:" destination="kPr-fy-Pab" eventType="touchUpInside" id="KZe-XC-3Vc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAi-tW-6uq">
+                                        <rect key="frame" x="0.0" y="547" width="353" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="FDK-QD-uay"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                            <color key="baseForegroundColor" name="TextColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="quizButtonPressed:" destination="kPr-fy-Pab" eventType="touchUpInside" id="6Yf-7j-J4x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-Ke-2ef">
+                                        <rect key="frame" x="0.0" y="617" width="353" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BHg-cl-OZU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                            <color key="baseForegroundColor" name="TextColor"/>
+                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="quizButtonPressed:" destination="kPr-fy-Pab" eventType="touchUpInside" id="lCR-fu-MwD"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GK1-TW-chE">
+                                        <rect key="frame" x="0.0" y="687" width="353" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="XAc-3D-tK2"/>
+                                        </constraints>
+                                        <color key="progressTintColor" name="BackgroundColor2"/>
+                                        <color key="trackTintColor" name="TextColor"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="giw-aW-Eqf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="giw-aW-Eqf" firstAttribute="bottom" secondItem="3GS-4n-FdG" secondAttribute="bottom" constant="10" id="0VH-nM-Th3"/>
+                            <constraint firstAttribute="trailing" secondItem="3GS-4n-FdG" secondAttribute="trailing" constant="20" id="CzF-rm-nrS"/>
+                            <constraint firstItem="3GS-4n-FdG" firstAttribute="top" secondItem="giw-aW-Eqf" secondAttribute="top" id="De5-3o-Tc1"/>
+                            <constraint firstItem="3GS-4n-FdG" firstAttribute="leading" secondItem="K6n-jH-yjX" secondAttribute="leading" constant="20" id="KEC-ND-fzT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ha1-N3-98P"/>
+                    <navigationItem key="navigationItem" title="Quiz" id="Ha1-N3-98P"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="KMf-mt-47O" id="Uz2-vn-Jp3"/>
+                        <outlet property="choice2Button" destination="rgw-bR-uab" id="pPo-Wa-76u"/>
+                        <outlet property="choice3Button" destination="EAi-tW-6uq" id="hYK-oN-zpC"/>
+                        <outlet property="choice4Button" destination="UFJ-Ke-2ef" id="KWb-o8-hLv"/>
+                        <outlet property="progressBar" destination="GK1-TW-chE" id="lYV-pJ-B56"/>
+                        <outlet property="questionLabel" destination="qDm-IP-L6Q" id="j3P-ah-HqW"/>
+                        <outlet property="resultLabel" destination="EaJ-3Y-WPv" id="Swa-Pt-7hd"/>
+                        <outlet property="scoreLabel" destination="gyM-nU-I40" id="nSF-Bj-abB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Y2-ek-tYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3555" y="524"/>
+            <point key="canvasLocation" x="3554.9618320610684" y="523.94366197183103"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="j3w-Sc-1Wn">
             <objects>
-                <tabBarController id="bKJ-1i-4R1" sceneMemberID="viewController">
+                <tabBarController id="bKJ-1i-4R1" customClass="CustomTabBarController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TBt-dE-Uzu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kK2-21-h9z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -292,9 +400,17 @@
             <objects>
                 <navigationController id="A9M-kM-XZ3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="eLT-xF-ACp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p7a-ES-6dp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="p7a-ES-6dp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="barTintColor" name="BackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="kPr-fy-Pab" kind="relationship" relationship="rootViewController" id="SKY-S8-Ele"/>
