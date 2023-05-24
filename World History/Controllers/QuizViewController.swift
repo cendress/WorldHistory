@@ -22,6 +22,21 @@ class QuizViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    let buttons = [choice1Button, choice2Button, choice3Button, choice4Button]
+    
+    for button in buttons {
+      button?.layer.cornerRadius = 15.0
+      button?.layer.borderWidth = 4
+      button?.layer.borderColor = UIColor.white.cgColor
+      button?.layer.shadowColor = UIColor.black.cgColor
+      button?.layer.shadowOffset = CGSize(width: 5, height: 5)
+      button?.layer.shadowRadius = 5
+      button?.layer.shadowOpacity = 1.0
+      button?.clipsToBounds = true
+    }
+    
+    resultLabel.isHidden = true
     loadNextQuestion()
   }
   
@@ -30,11 +45,17 @@ class QuizViewController: UIViewController {
     
     if sender.tag == correctAnswerIndex {
       score += 1
-      resultLabel.text = "Correct answer!"
+      resultLabel.text = "Correct!"
       resultLabel.textColor = UIColor.green
     } else {
-      resultLabel.text = "Incorrect answer."
+      resultLabel.text = "Incorrect!"
       resultLabel.textColor = UIColor.red
+    }
+    
+    resultLabel.isHidden = false
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+      self.resultLabel.isHidden = true
     }
     
     scoreLabel.text = "Score: \(score)"
@@ -43,14 +64,23 @@ class QuizViewController: UIViewController {
     if currentQuestion < quizBrain.questions.count {
       loadNextQuestion()
     } else {
-      currentQuestion = 0
-      score = 0
-      quizBrain = QuizBrain()
-      loadNextQuestion()
+      let resultInPercentage = Int(round(Double(score) / Double(quizBrain.questions.count) * 100.0))
+      let alertController = UIAlertController(title: "Quiz Ended", message: "You scored \(resultInPercentage)%", preferredStyle: .alert)
+      let restartAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+        self.currentQuestion = 0
+        self.score = 0
+        self.quizBrain = QuizBrain()
+        self.loadNextQuestion()
+      }
+      alertController.addAction(restartAction)
+      self.present(alertController, animated: true, completion: nil)
     }
   }
   
+  
   func loadNextQuestion() {
+    scoreLabel.text = "Score: \(score)"
+    
     let question = quizBrain.questions[currentQuestion]
     questionLabel.text = question.text
     
