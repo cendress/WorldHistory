@@ -20,7 +20,7 @@ class DefinitionViewController: UIViewController {
     label.text = definition
     label.textColor = UIColor(named: "TextColor")
     label.numberOfLines = 0
-    label.font = UIFont(name: "Avenir-Book", size: 20)
+    label.font = UIFont(name: "Avenir-Book", size: 22)
     
     let padding: CGFloat = 20
     label.frame = CGRect(x: padding, y: padding, width: view.bounds.width - 2 * padding, height: view.bounds.height - 2 * padding)

@@ -10,19 +10,20 @@ import UIKit
 class VocabularyTableViewController: UITableViewController {
   
   let vocabularyTerms = [
-    ["term": "Hominid", "definition": "Members of the family Hominidae, which includes all species on the human side of the last common ancestors with the apes."],
-    ["term": "Paleolithic Era", "definition": "Also known as the Old Stone Age, this period of prehistory is characterized by the use of stone tools by early humans."],
-    ["term": "Mesolithic Era", "definition": "The transitional period between the Paleolithic and Neolithic eras, also known as the Middle Stone Age."],
-    ["term": "Neolithic Era", "definition": "Also known as the New Stone Age, this period is marked by the development of agriculture and settled life."],
-    ["term": "Domestication", "definition": "The process of adapting wild plants and animals for human use. Domestic species are raised for food, work, clothing, medicine, and many other uses."],
-    ["term": "Hunter-Gatherers", "definition": "Early humans who lived by hunting animals and gathering plants rather than by agriculture."],
-    ["term": "Agriculture", "definition": "The science and art of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization."],
-    ["term": "Metallurgy", "definition": "The branch of science and technology concerned with the properties of metals and their production and purification."],
-    ["term": "Bronze Age", "definition": "A historical period characterized by the use of bronze, early writing systems, and the early development of urban civilization."],
-    ["term": "Cuneiform", "definition": "One of the earliest systems of writing, developed by the Sumerians of Mesopotamia c. 3200–3000 BCE."],
-    ["term": "Hieroglyphics", "definition": "A writing system using picture symbols, used in ancient Egypt."],
-    ["term": "Archaeology", "definition": "The study of human history and prehistory through the excavation of sites and the analysis of artifacts and other physical remains."]
+    ["term": "Hominid", "definition": "Hominid refers to any member of the family Hominidae, which is a biological classification that includes all species on the human lineage since the point of divergence with the ape lineage. This family of species is noteworthy for its bipedal locomotion and high degree of intelligence relative to other species."],
+    ["term": "Paleolithic Era", "definition": "The Paleolithic Era, also known as the Old Stone Age, is a crucial period in human prehistory that is primarily characterized by the emergence and predominance of stone tools, utilized by early humans for survival. This was the era where our ancestors made significant strides in cognitive and technological development, as seen through the creation of tools, cave paintings, and various symbolic artifacts."],
+    ["term": "Mesolithic Era", "definition": "The Mesolithic Era serves as the transitional phase between the Paleolithic and Neolithic eras. Also referred to as the Middle Stone Age, it signifies a period when humans began to develop more refined tools and started settling in specific areas due to the advent of favourable climatic conditions."],
+    ["term": "Neolithic Era", "definition": "The Neolithic Era, commonly known as the New Stone Age, is a significant period in human history characterized by the development of agriculture, settled life, pottery-making, and the construction of monumental architecture. This period marked the shift from nomadic hunter-gatherer communities to agrarian societies, providing the foundation for modern civilizations."],
+    ["term": "Domestication", "definition": "Domestication refers to the long-term process whereby humans intervene and manipulate the breeding patterns of wild plants and animals, ultimately making these species more useful for human societies. These domesticated species can provide various resources such as food, work assistance, clothing, medicinal products, and even companionship. It was a crucial development that significantly impacted human lifestyle and civilization."],
+    ["term": "Hunter-Gatherers", "definition": "Hunter-Gatherers were early humans whose survival primarily depended on hunting animals and gathering plants, rather than farming or domesticating animals. These nomadic groups were highly adapted to their environments and made use of all available food resources to sustain themselves."],
+    ["term": "Agriculture", "definition": "Agriculture is a sophisticated blend of the science and art of cultivating plants and rearing livestock. It played a pivotal role in the rise of sedentary human civilization by providing a stable food source, which led to an increase in population, the formation of communities, and eventually complex societies."],
+    ["term": "Metallurgy", "definition": "Metallurgy is a specialized branch of science and technology that focuses on the study of the physical and chemical behavior of metals and their alloys. This field is heavily concerned with procedures related to the extraction, production, and purification of various metals."],
+    ["term": "Bronze Age", "definition": "The Bronze Age is a historical period characterized by the widespread use of bronze in tools, weapons, and ornaments, early writing systems, and the initial stages of urban civilization. This period was marked by increasing social complexity and technological advancement."],
+    ["term": "Cuneiform", "definition": "Cuneiform is one of the earliest known systems of writing, innovated by the Sumerians of Mesopotamia around 3200–3000 BCE. The script, inscribed on clay tablets with a reed stylus, includes pictographic, ideographic and phonetic symbols and was used for several thousand years in a variety of Middle Eastern cultures."],
+    ["term": "Hieroglyphics", "definition": "Hieroglyphics is an ancient writing system that used pictorial symbols to represent words or sounds. Primarily used by the ancient Egyptians, these picture symbols were utilized for a range of purposes, including recording royal decrees, religious texts, and administrative documents. This sophisticated writing system, which includes both logographic and alphabetic elements, was key to understanding the culture and civilization of Ancient Egypt."],
+    ["term": "Archaeology", "definition": "Archaeology is the scientific study of human history and prehistory through meticulous excavation of archaeological sites and the in-depth analysis of artifacts and other physical remains. The discipline provides an invaluable perspective on the human past, exploring various aspects such as cultures, behaviors, and societal development. It spans the period from the earliest human origins to the present day."]
   ]
+  
   
   
   override func viewDidLoad() {
@@ -60,15 +61,15 @@ class VocabularyTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      tableView.deselectRow(at: indexPath, animated: true)
-      
-      let term = vocabularyTerms[indexPath.row]
-      
-      let definitionVC = DefinitionViewController()
-      definitionVC.term = term["term"]
-      definitionVC.definition = term["definition"]
-      
-      navigationController?.pushViewController(definitionVC, animated: true)
+    tableView.deselectRow(at: indexPath, animated: true)
+    
+    let term = vocabularyTerms[indexPath.row]
+    
+    let definitionVC = DefinitionViewController()
+    definitionVC.term = term["term"]
+    definitionVC.definition = term["definition"]
+    
+    navigationController?.pushViewController(definitionVC, animated: true)
   }
-
+  
 }

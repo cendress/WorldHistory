@@ -162,11 +162,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="trailing" secondItem="7td-hG-GFd" secondAttribute="trailing" id="Ahx-bb-c7t"/>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="12.5661" id="Snp-N4-fy1"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="NfE-Ty-9AO"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="bottom" secondItem="7td-hG-GFd" secondAttribute="bottom" id="dEl-qb-DtS"/>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="fzV-Hk-oF0"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="leading" secondItem="7td-hG-GFd" secondAttribute="leading" id="gUr-d0-fBm"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="top" secondItem="ftq-AQ-FEO" secondAttribute="top" id="hHa-co-mcS"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="12.5661" id="kJZ-7v-km1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prehistory" id="1u6-lF-Zsb"/>
