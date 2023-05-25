@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ff2-I2-q2w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2g5-wx-qOb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -9,10 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Animated Launch View Controller-->
+        <scene sceneID="IxS-KI-Ncm">
+            <objects>
+                <viewController id="2g5-wx-qOb" customClass="AnimatedLaunchViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Kk-KE-LOu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RV4-gO-mBm">
+                                <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="68T-bo-q5Q"/>
+                                    <constraint firstAttribute="height" constant="250" id="PHF-u2-pzY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn world history." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f07-EH-gIX">
+                                <rect key="frame" x="88.000000000000014" y="561" width="217.33333333333337" height="34.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xzt-OL-8S9"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RV4-gO-mBm" firstAttribute="centerY" secondItem="2Kk-KE-LOu" secondAttribute="centerY" id="DG3-Z9-b09"/>
+                            <constraint firstItem="f07-EH-gIX" firstAttribute="centerX" secondItem="2Kk-KE-LOu" secondAttribute="centerX" id="UOk-Bg-hz3"/>
+                            <constraint firstItem="f07-EH-gIX" firstAttribute="top" secondItem="RV4-gO-mBm" secondAttribute="bottom" constant="10" id="Vzi-oe-sgY"/>
+                            <constraint firstItem="RV4-gO-mBm" firstAttribute="centerX" secondItem="2Kk-KE-LOu" secondAttribute="centerX" id="zAf-7I-a6j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appLogoImage" destination="RV4-gO-mBm" id="s8c-eW-CiS"/>
+                        <outlet property="launchScreenLabel" destination="f07-EH-gIX" id="gBb-sd-x1L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caP-pL-E1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="-954"/>
+        </scene>
         <!--World History-->
         <scene sceneID="VJ3-gx-oQh">
             <objects>
-                <viewController id="ff2-I2-q2w" customClass="HomeViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="ff2-I2-q2w" customClass="HomeViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4T-7z-P8w">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +146,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-RA-dtr">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="9000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-sr-fwi">
                                                 <rect key="frame" x="10" y="9.9999999999999982" width="373" height="27.333333333333329"/>
@@ -119,6 +159,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="uoc-sr-fwi" secondAttribute="trailing" constant="10" id="Eow-c0-SGz"/>
                                             <constraint firstItem="uoc-sr-fwi" firstAttribute="top" secondItem="tX5-RA-dtr" secondAttribute="top" constant="10" id="GKU-6k-aV2"/>
+                                            <constraint firstAttribute="bottom" secondItem="uoc-sr-fwi" secondAttribute="bottom" constant="10" id="eSu-dm-L6g"/>
                                             <constraint firstItem="uoc-sr-fwi" firstAttribute="leading" secondItem="tX5-RA-dtr" secondAttribute="leading" constant="10" id="gxY-ob-Ee3"/>
                                         </constraints>
                                     </view>
@@ -137,7 +178,7 @@
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="trailing" secondItem="7td-hG-GFd" secondAttribute="trailing" id="Ahx-bb-c7t"/>
                             <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="NfE-Ty-9AO"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="bottom" secondItem="7td-hG-GFd" secondAttribute="bottom" id="dEl-qb-DtS"/>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="11.9048" id="gGr-eZ-4lh"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="11.9048" priority="250" id="gGr-eZ-4lh"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="leading" secondItem="7td-hG-GFd" secondAttribute="leading" id="gUr-d0-fBm"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="top" secondItem="ftq-AQ-FEO" secondAttribute="top" id="hHa-co-mcS"/>
                         </constraints>
@@ -432,7 +473,11 @@
             <point key="canvasLocation" x="1985" y="-225"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zv1-5e-NUW"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="AppLogo" width="166.66667175292969" height="166.66667175292969"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="pencil" catalog="system" width="128" height="113"/>

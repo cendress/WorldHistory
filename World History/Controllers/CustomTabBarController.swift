@@ -13,8 +13,14 @@ class CustomTabBarController: UITabBarController {
     super.viewDidLoad()
     
     selectedIndex = 1
+    
+    tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
+    tabBar.layer.shadowRadius = 4
+    tabBar.layer.shadowColor = UIColor.black.cgColor
+    tabBar.layer.shadowOpacity = 0.3
   }
 }
+
 
 
 
