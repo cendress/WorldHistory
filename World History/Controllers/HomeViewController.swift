@@ -16,23 +16,32 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     
     stackView.layer.cornerRadius = 25.0
-    
+    setupButtons()
+  }
+  
+  private func setupButtons() {
     for button in timePeriodButtons {
-      button.layer.cornerRadius = 25.0
-      button.layer.borderWidth = 4
-      button.layer.borderColor = UIColor.white.cgColor
-      button.layer.shadowColor = UIColor.black.cgColor
-      button.layer.shadowOffset = CGSize(width: 5, height: 5)
-      button.layer.shadowRadius = 5
-      button.layer.shadowOpacity = 1.0
-      
-      let gradient = CAGradientLayer()
-      gradient.frame = button.bounds
-      gradient.colors = [UIColor(red: 83/255, green: 113/255, blue: 136/255, alpha: 1).cgColor, UIColor.white.cgColor]
-      
-      button.layer.insertSublayer(gradient, at: 0)
-      button.clipsToBounds = true
+      setupButtonStyle(button)
+      setupButtonGradient(button)
     }
+  }
+  
+  private func setupButtonStyle(_ button: UIButton) {
+    button.layer.cornerRadius = 25.0
+    button.layer.borderWidth = 4
+    button.layer.borderColor = UIColor.white.cgColor
+    button.layer.shadowColor = UIColor.black.cgColor
+    button.layer.shadowOffset = CGSize(width: 5, height: 5)
+    button.layer.shadowRadius = 5
+    button.layer.shadowOpacity = 1.0
+    button.clipsToBounds = true
+  }
+  
+  private func setupButtonGradient(_ button: UIButton) {
+    let gradient = CAGradientLayer()
+    gradient.frame = button.bounds
+    gradient.colors = [UIColor(red: 83/255, green: 113/255, blue: 136/255, alpha: 1).cgColor, UIColor.white.cgColor]
+    button.layer.insertSublayer(gradient, at: 0)
   }
   
   override func viewDidLayoutSubviews() {
@@ -45,11 +54,11 @@ class HomeViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if segue.identifier == "goToPrehistory" {
-      }
+    if segue.identifier == "goToPrehistory" {
+    }
   }
-
 }
+
 
 
 

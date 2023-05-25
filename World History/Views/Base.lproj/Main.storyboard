@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="116" width="353" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12B-f4-MMJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="90.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="113.33333333333333"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Prehistory">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-Rr-qAn">
-                                        <rect key="frame" x="0.0" y="115.33333333333334" width="353" height="90.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="138.33333333333334" width="353" height="113.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ancient History">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -42,7 +42,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-4A-Y5R">
-                                        <rect key="frame" x="0.0" y="230.66666666666671" width="353" height="90.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="276.66666666666669" width="353" height="113.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Post-Classical Era">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -50,17 +50,8 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-eF-nWQ">
-                                        <rect key="frame" x="0.0" y="346" width="353" height="90.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Early Modern Period">
-                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                            <color key="baseForegroundColor" name="TextColor"/>
-                                            <color key="baseBackgroundColor" name="BackgroundColor2"/>
-                                        </buttonConfiguration>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3t-Gg-kLC">
-                                        <rect key="frame" x="0.0" y="461.33333333333337" width="353" height="90.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="415.33333333333337" width="353" height="113.33333333333337"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -69,7 +60,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-q1-uUA">
-                                        <rect key="frame" x="0.0" y="576.66666666666663" width="353" height="90.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="553.66666666666663" width="353" height="113.33333333333337"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Contemporary Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -92,7 +83,6 @@
                     <navigationItem key="navigationItem" title="World History" id="jSK-Rd-834"/>
                     <connections>
                         <outlet property="stackView" destination="EjC-Xw-toR" id="vRv-SO-7Z2"/>
-                        <outletCollection property="timePeriodButtons" destination="6TD-eF-nWQ" collectionClass="NSMutableArray" id="IsC-sU-x7u"/>
                         <outletCollection property="timePeriodButtons" destination="12B-f4-MMJ" collectionClass="NSMutableArray" id="ieU-DS-Fdf"/>
                         <outletCollection property="timePeriodButtons" destination="Yco-Rr-qAn" collectionClass="NSMutableArray" id="SqD-BA-hWG"/>
                         <outletCollection property="timePeriodButtons" destination="y2g-4A-Y5R" collectionClass="NSMutableArray" id="J8f-Im-wVT"/>
@@ -102,23 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSJ-VG-Aa2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="-954"/>
-        </scene>
-        <!--Map View Controller-->
-        <scene sceneID="ouJ-pi-Gem">
-            <objects>
-                <viewController id="wU3-JY-OGg" customClass="MapViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WkH-x9-KVG">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="cQD-GJ-6IW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vjw-tu-3pt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vKX-FG-VaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1210" y="524"/>
+            <point key="canvasLocation" x="1984" y="-954"/>
         </scene>
         <!--Prehistory-->
         <scene sceneID="9yg-mm-r9a">
@@ -132,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-RA-dtr">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="9500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="9000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-sr-fwi">
                                                 <rect key="frame" x="10" y="9.9999999999999982" width="373" height="27.333333333333329"/>
@@ -163,9 +137,9 @@
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="trailing" secondItem="7td-hG-GFd" secondAttribute="trailing" id="Ahx-bb-c7t"/>
                             <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="NfE-Ty-9AO"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="bottom" secondItem="7td-hG-GFd" secondAttribute="bottom" id="dEl-qb-DtS"/>
+                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="11.9048" id="gGr-eZ-4lh"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="leading" secondItem="7td-hG-GFd" secondAttribute="leading" id="gUr-d0-fBm"/>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="top" secondItem="ftq-AQ-FEO" secondAttribute="top" id="hHa-co-mcS"/>
-                            <constraint firstItem="tX5-RA-dtr" firstAttribute="height" secondItem="ftq-AQ-FEO" secondAttribute="height" multiplier="12.5661" id="kJZ-7v-km1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prehistory" id="1u6-lF-Zsb"/>
@@ -207,28 +181,28 @@
             </objects>
             <point key="canvasLocation" x="2777.8625954198474" y="523.94366197183103"/>
         </scene>
-        <!--Quiz-->
+        <!--Quiz View Controller-->
         <scene sceneID="NuS-cp-e5P">
             <objects>
                 <viewController id="kPr-fy-Pab" customClass="QuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6n-jH-yjX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3GS-4n-FdG">
-                                <rect key="frame" x="20" y="0.0" width="353" height="697"/>
+                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mFS-h2-btz">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="54.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyM-nU-I40">
-                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="54.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="58.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-3Y-WPv">
-                                                <rect key="frame" x="304" y="0.0" width="49" height="54.333333333333336"/>
+                                                <rect key="frame" x="304" y="0.0" width="49" height="58.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -236,13 +210,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-IP-L6Q">
-                                        <rect key="frame" x="0.0" y="64.333333333333343" width="353" height="332.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="68.333333333333343" width="353" height="380.66666666666663"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-mt-47O">
-                                        <rect key="frame" x="0.0" y="407" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="459" width="353" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="3j9-MP-7vV"/>
                                         </constraints>
@@ -257,7 +231,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-bR-uab">
-                                        <rect key="frame" x="0.0" y="477" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="529" width="353" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="jIR-QF-jOj"/>
                                         </constraints>
@@ -272,7 +246,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAi-tW-6uq">
-                                        <rect key="frame" x="0.0" y="547" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="599" width="353" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="FDK-QD-uay"/>
                                         </constraints>
@@ -287,7 +261,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-Ke-2ef">
-                                        <rect key="frame" x="0.0" y="617" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="669" width="353" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="BHg-cl-OZU"/>
                                         </constraints>
@@ -302,7 +276,7 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GK1-TW-chE">
-                                        <rect key="frame" x="0.0" y="687" width="353" height="10"/>
+                                        <rect key="frame" x="0.0" y="739" width="353" height="10"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="XAc-3D-tK2"/>
                                         </constraints>
@@ -321,7 +295,7 @@
                             <constraint firstItem="3GS-4n-FdG" firstAttribute="leading" secondItem="K6n-jH-yjX" secondAttribute="leading" constant="20" id="KEC-ND-fzT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Quiz" id="Ha1-N3-98P"/>
+                    <navigationItem key="navigationItem" id="Ha1-N3-98P"/>
                     <connections>
                         <outlet property="choice1Button" destination="KMf-mt-47O" id="Uz2-vn-Jp3"/>
                         <outlet property="choice2Button" destination="rgw-bR-uab" id="pPo-Wa-76u"/>
@@ -350,7 +324,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="fub-hP-cdV" kind="relationship" relationship="viewControllers" id="kvu-5z-6GQ"/>
-                        <segue destination="G0w-tG-sWt" kind="relationship" relationship="viewControllers" id="4f8-dm-Rkf"/>
                         <segue destination="uNL-L1-LXp" kind="relationship" relationship="viewControllers" id="dxv-sH-ynb"/>
                         <segue destination="63P-hm-IzR" kind="relationship" relationship="viewControllers" id="cxH-Df-gS6"/>
                         <segue destination="A9M-kM-XZ3" kind="relationship" relationship="viewControllers" id="fmf-yj-EMW"/>
@@ -358,24 +331,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvH-XY-T1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1984" y="-954"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0hb-EK-e8S">
-            <objects>
-                <navigationController id="G0w-tG-sWt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="map" catalog="system" id="hYb-EW-w1s"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x9o-Kl-kTH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="wU3-JY-OGg" kind="relationship" relationship="rootViewController" id="PzZ-Wd-sr0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xa9-mj-sNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1211" y="-225"/>
+            <point key="canvasLocation" x="2778" y="-954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dpy-50-qGa">
@@ -398,15 +354,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pC-xm-aIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471" y="-225"/>
+            <point key="canvasLocation" x="1205" y="-225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9s8-XL-4WU">
             <objects>
                 <navigationController id="A9M-kM-XZ3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="eLT-xF-ACp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="p7a-ES-6dp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="p7a-ES-6dp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <color key="barTintColor" name="BackgroundColor"/>
@@ -479,7 +435,6 @@
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="map" catalog="system" width="128" height="112"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <namedColor name="BackgroundColor">

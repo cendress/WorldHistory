@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D162D312A1CF2AD0023A80D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D302A1CF2AD0023A80D /* MapViewController.swift */; };
 		9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D322A1CF2E10023A80D /* ReadViewController.swift */; };
 		9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */; };
 		9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D362A1CF3E90023A80D /* QuizViewController.swift */; };
@@ -16,6 +15,7 @@
 		9D162D3E2A1E7ED70023A80D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D3D2A1E7ED70023A80D /* CustomTabBarController.swift */; };
 		9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D3F2A1E89B60023A80D /* QuizBrain.swift */; };
 		9D162D422A1E8D3C0023A80D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D412A1E8D3C0023A80D /* Question.swift */; };
+		9D162D4A2A1FBF870023A80D /* VocabularyTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D492A1FBF870023A80D /* VocabularyTerm.swift */; };
 		9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */; };
 		9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */; };
 		9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */; };
@@ -26,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D162D302A1CF2AD0023A80D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9D162D322A1CF2E10023A80D /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTableViewController.swift; sourceTree = "<group>"; };
 		9D162D362A1CF3E90023A80D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		9D162D3D2A1E7ED70023A80D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9D162D3F2A1E89B60023A80D /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		9D162D412A1E8D3C0023A80D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		9D162D492A1FBF870023A80D /* VocabularyTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTerm.swift; sourceTree = "<group>"; };
 		9D45A9A22A1BB2B8006524DA /* World History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45A9A52A1BB2B8006524DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +62,7 @@
 			children = (
 				9D162D3D2A1E7ED70023A80D /* CustomTabBarController.swift */,
 				9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */,
-				9D162D302A1CF2AD0023A80D /* MapViewController.swift */,
-				9D162D322A1CF2E10023A80D /* ReadViewController.swift */,
-				9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */,
-				9D162D3B2A1D49130023A80D /* DefinitionViewController.swift */,
-				9D162D362A1CF3E90023A80D /* QuizViewController.swift */,
+				9D162D472A1FB6F90023A80D /* Prehistory */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,11 +97,31 @@
 		9D162D3A2A1D0B0C0023A80D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D162D482A1FB7080023A80D /* Prehistory */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D162D472A1FB6F90023A80D /* Prehistory */ = {
+			isa = PBXGroup;
+			children = (
+				9D162D322A1CF2E10023A80D /* ReadViewController.swift */,
+				9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */,
+				9D162D3B2A1D49130023A80D /* DefinitionViewController.swift */,
+				9D162D362A1CF3E90023A80D /* QuizViewController.swift */,
+			);
+			path = Prehistory;
+			sourceTree = "<group>";
+		};
+		9D162D482A1FB7080023A80D /* Prehistory */ = {
+			isa = PBXGroup;
+			children = (
 				9D162D382A1D09CF0023A80D /* ReadingText.swift */,
 				9D162D412A1E8D3C0023A80D /* Question.swift */,
 				9D162D3F2A1E89B60023A80D /* QuizBrain.swift */,
+				9D162D492A1FBF870023A80D /* VocabularyTerm.swift */,
 			);
-			path = Models;
+			path = Prehistory;
 			sourceTree = "<group>";
 		};
 		9D45A9992A1BB2B8006524DA = {
@@ -211,13 +227,13 @@
 				9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */,
 				9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */,
 				9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */,
+				9D162D4A2A1FBF870023A80D /* VocabularyTerm.swift in Sources */,
 				9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */,
 				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
 				9D162D392A1D09CF0023A80D /* ReadingText.swift in Sources */,
 				9D162D3E2A1E7ED70023A80D /* CustomTabBarController.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D162D422A1E8D3C0023A80D /* Question.swift in Sources */,
-				9D162D312A1CF2AD0023A80D /* MapViewController.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
 				9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */,
 				9D162D3C2A1D49130023A80D /* DefinitionViewController.swift in Sources */,
@@ -375,6 +391,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +420,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
