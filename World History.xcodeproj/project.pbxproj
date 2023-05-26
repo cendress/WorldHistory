@@ -23,7 +23,9 @@
 		9D45A9AD2A1BB2B8006524DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9AB2A1BB2B8006524DA /* Main.storyboard */; };
 		9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */; };
 		9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9B12A1BB2B9006524DA /* Assets.xcassets */; };
-		9D6BF0EF2A1FE8D500FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0EE2A1FE8D500FA160E /* AncientTabBarController.swift */; };
+		9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */; };
+		9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */; };
+		9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F62A20EDEC00FA160E /* AncientReadingText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,9 @@
 		9D45A9AF2A1BB2B8006524DA /* World_History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = World_History.xcdatamodel; sourceTree = "<group>"; };
 		9D45A9B12A1BB2B9006524DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D45A9B62A1BB2B9006524DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D6BF0EE2A1FE8D500FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
+		9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
+		9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadViewController.swift; sourceTree = "<group>"; };
+		9D6BF0F62A20EDEC00FA160E /* AncientReadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadingText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9D162D482A1FB7080023A80D /* Prehistory */,
+				9D6BF0F52A20EDCA00FA160E /* Ancient History */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,7 +164,16 @@
 		9D6BF0F02A1FE8F900FA160E /* Ancient History */ = {
 			isa = PBXGroup;
 			children = (
-				9D6BF0EE2A1FE8D500FA160E /* AncientTabBarController.swift */,
+				9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */,
+				9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */,
+			);
+			path = "Ancient History";
+			sourceTree = "<group>";
+		};
+		9D6BF0F52A20EDCA00FA160E /* Ancient History */ = {
+			isa = PBXGroup;
+			children = (
+				9D6BF0F62A20EDEC00FA160E /* AncientReadingText.swift */,
 			);
 			path = "Ancient History";
 			sourceTree = "<group>";
@@ -239,11 +253,13 @@
 				9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */,
 				9D162D4A2A1FBF870023A80D /* VocabularyTerm.swift in Sources */,
 				9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */,
+				9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */,
 				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
 				9D162D392A1D09CF0023A80D /* ReadingText.swift in Sources */,
+				9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */,
 				9D162D3E2A1E7ED70023A80D /* CustomTabBarController.swift in Sources */,
 				9D162D502A1FD3620023A80D /* AnimatedLaunchViewController.swift in Sources */,
-				9D6BF0EF2A1FE8D500FA160E /* AncientTabBarController.swift in Sources */,
+				9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D162D422A1E8D3C0023A80D /* Question.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
