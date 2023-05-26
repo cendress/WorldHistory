@@ -53,11 +53,19 @@ class HomeViewController: UIViewController {
     }
   }
   
+  @IBAction func ancientHistoryButtonTapped(_ sender: UIButton) {
+    performSegue(withIdentifier: "goToAncientHistory", sender: self)
+  }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "goToPrehistory" {
+      
+    } else if segue.identifier == "goToAncientHistory" {
+      _ = segue.destination as? AncientTabBarController
     }
   }
 }
+
 
 
 

@@ -18,6 +18,7 @@ class CustomTabBarController: UITabBarController {
     tabBar.layer.shadowRadius = 4
     tabBar.layer.shadowColor = UIColor.black.cgColor
     tabBar.layer.shadowOpacity = 0.3
+    
   }
 }
 
