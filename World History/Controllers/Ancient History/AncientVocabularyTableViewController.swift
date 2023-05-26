@@ -21,7 +21,13 @@ class AncientVocabularyTableViewController: UITableViewController {
     .init(term: "Philosophy", definition: "Philosophy is the study of fundamental questions about existence, reality, knowledge, values, reason, mind, and ethics. The Ancient Greek philosophers Plato, Socrates, and Aristotle were among the most influential philosophers who laid the groundwork for Western philosophy."),
     .init(term: "Empire", definition: "An empire is a political system in which a group of states is governed by a single entity, usually an emperor or empress. Empires often form after a single state or kingdom manages to extend its sovereignty over other territories."),
     .init(term: "Pax Romana", definition: "Pax Romana, Latin for 'Roman Peace', is a term referring to the state of comparative tranquillity throughout the Mediterranean world from the reign of Augustus (27 BC–AD 14) to the reign of Marcus Aurelius (AD 161–180)."),
-    .init(term: "Confucianism", definition: "Confucianism is a tradition, a philosophy, and a religion, or sometimes said as a way of life or societal norm. Originated by the Chinese philosopher Confucius, it emphasizes personal and governmental morality, correctness of social relationships, justice, and sincerity.")
+    .init(term: "Confucianism", definition: "Confucianism is a tradition, a philosophy, and a religion, or sometimes said as a way of life or societal norm. Originated by the Chinese philosopher Confucius, it emphasizes personal and governmental morality, correctness of social relationships, justice, and sincerity."),
+    .init(term: "Ziggurat", definition: "A ziggurat is a type of massive stone structure built in ancient Mesopotamia. It has the form of a terraced compound of successively receding stories or levels."),
+    .init(term: "Mandate of Heaven", definition: "The Mandate of Heaven is a Chinese political and religious doctrine used to justify the rule of the Emperor of China. According to this belief, Heaven bestows its mandate to a just ruler, the Son of Heaven."),
+    .init(term: "Polis", definition: "The term polis, usually translated as city-state, was the fundamental political unit in ancient Greece. A polis consisted of a city and its surrounding countryside, including numerous smaller communities."),
+    .init(term: "Papyrus", definition: "Papyrus is a material similar to thick paper that was used in ancient times as a writing surface. It was made from the pith of the papyrus plant, Cyperus papyrus, a wetland sedge."),
+    .init(term: "Oracle", definition: "An oracle was a person or agency considered to provide wise and insightful counsel or prophetic predictions, most notably including precognition of the future, inspired by deities.")
+
   ]
   
   
@@ -81,7 +87,7 @@ class AncientVocabularyTableViewController: UITableViewController {
   
   private func showDefinitionForTerm(at indexPath: IndexPath) {
     let term = ancientVocabularyTerms[indexPath.row]
-    let definitionVC = AncientDefinitionViewController(term: term)
+    let definitionVC = DefinitionViewController(term: term)
     
     let backItem = UIBarButtonItem()
     backItem.title = "Back"
