@@ -657,7 +657,7 @@
         <!--Vocabulary-->
         <scene sceneID="cFD-ya-Djo">
             <objects>
-                <tableViewController id="SrT-OX-bdf" customClass="VocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="SrT-OX-bdf" customClass="AncientVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="saE-hS-Xzi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -684,10 +684,10 @@
             </objects>
             <point key="canvasLocation" x="6181" y="411"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Ancient Quiz View Controller-->
         <scene sceneID="o6A-Vl-XKm">
             <objects>
-                <viewController id="jX7-Zv-mSN" customClass="QuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jX7-Zv-mSN" customClass="AncientQuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBq-dy-VVQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
