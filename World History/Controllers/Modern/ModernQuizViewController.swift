@@ -1,13 +1,14 @@
 //
-//  AncientQuizViewController.swift
+//  ModernQuizViewController.swift
 //  World History
 //
-//  Created by Christopher Endress on 5/26/23.
+//  Created by Christopher Endress on 5/27/23.
 //
 
 import UIKit
 
-class AncientQuizViewController: UIViewController {
+class ModernQuizViewController: UIViewController {
+
   @IBOutlet weak var questionLabel: UILabel!
   @IBOutlet weak var progressBar: UIProgressView!
   @IBOutlet weak var choice1Button: UIButton!
@@ -17,7 +18,7 @@ class AncientQuizViewController: UIViewController {
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var resultLabel: UILabel!
   
-  var ancientQuizBrain = AncientQuizBrain()
+  var modernQuizBrain = ModernQuizBrain()
   var currentQuestion = 0
   var score = 0
   
@@ -35,7 +36,7 @@ class AncientQuizViewController: UIViewController {
   
   func loadNextQuestion() {
     scoreLabel.text = "Score: \(score)"
-    let question = ancientQuizBrain.questions[currentQuestion]
+    let question = modernQuizBrain.questions[currentQuestion]
     questionLabel.text = question.text
     
     let answerButtons = [choice1Button, choice2Button, choice3Button, choice4Button]
@@ -44,12 +45,12 @@ class AncientQuizViewController: UIViewController {
       button?.tag = index
     }
     
-    progressBar.progress = Float(currentQuestion + 1) / Float(ancientQuizBrain.questions.count)
+    progressBar.progress = Float(currentQuestion + 1) / Float(modernQuizBrain.questions.count)
   }
   
   
   func checkAnswer(_ sender: UIButton) {
-    let correctAnswerIndex = ancientQuizBrain.questions[currentQuestion].correctAnswerIndex
+    let correctAnswerIndex = modernQuizBrain.questions[currentQuestion].correctAnswerIndex
     if sender.tag == correctAnswerIndex {
       score += 1
       showResult(correct: true)
@@ -72,7 +73,7 @@ class AncientQuizViewController: UIViewController {
     scoreLabel.text = "Score: \(score)"
     currentQuestion += 1
     
-    if currentQuestion < ancientQuizBrain.questions.count {
+    if currentQuestion < modernQuizBrain.questions.count {
       loadNextQuestion()
     } else {
       showEndQuizAlert()
@@ -80,7 +81,7 @@ class AncientQuizViewController: UIViewController {
   }
   
   func showEndQuizAlert() {
-    let resultInPercentage = Int(round(Double(score) / Double(ancientQuizBrain.questions.count) * 100.0))
+    let resultInPercentage = Int(round(Double(score) / Double(modernQuizBrain.questions.count) * 100.0))
     let alertController = UIAlertController(title: "Quiz Ended", message: "You scored \(resultInPercentage)%", preferredStyle: .alert)
     let restartAction = UIAlertAction(title: "Ok", style: .default) { (_) in
       self.resetQuiz()
@@ -92,7 +93,7 @@ class AncientQuizViewController: UIViewController {
   func resetQuiz() {
     currentQuestion = 0
     score = 0
-    ancientQuizBrain = AncientQuizBrain()
+    modernQuizBrain = ModernQuizBrain()
     loadNextQuestion()
   }
   
@@ -109,4 +110,5 @@ class AncientQuizViewController: UIViewController {
       button?.clipsToBounds = true
     }
   }
+
 }

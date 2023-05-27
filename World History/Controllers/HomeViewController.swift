@@ -53,15 +53,6 @@ class HomeViewController: UIViewController {
     }
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "goToPrehistory" {
-    } else if segue.identifier == "goToAncientHistory" {
-      _ = segue.destination as? AncientTabBarController
-    } else if segue.identifier == "goToPostClassical" {
-      _ = segue.destination as? PostClassicalTabController
-    }
-  }
-  
   @IBAction func prehistoryButtonTapped(_ sender: UIButton) {
     performSegue(withIdentifier: "goToPrehistory", sender: self)
   }
@@ -72,6 +63,10 @@ class HomeViewController: UIViewController {
   
   @IBAction func postClassicalButtonTapped(_ sender: UIButton) {
     performSegue(withIdentifier: "goToPostClassical", sender: self)
+  }
+  
+  @IBAction func modernButtonTapped(_ sender: UIButton) {
+    performSegue(withIdentifier: "goToModern", sender: self)
   }
   
 }

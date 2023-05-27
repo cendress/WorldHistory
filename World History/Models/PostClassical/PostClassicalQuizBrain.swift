@@ -29,7 +29,10 @@ struct PostClassicalQuizBrain {
     Question(text: "Who was a significant author during the Late Middle Ages?", answers: ["William Shakespeare", "Geoffrey Chaucer", "Homer", "Virgil"], correctAnswer: "Geoffrey Chaucer"),
     Question(text: "Which dynasty marked a period of stability and wealth in China after the collapse of the Yuan dynasty?", answers: ["Qing dynasty", "Ming dynasty", "Tang dynasty", "Song dynasty"], correctAnswer: "Ming dynasty"),
     Question(text: "Which American empires emerged as sophisticated societies with complex political systems during the Late Middle Ages?", answers: ["The Aztec and Inca Empires", "The Maya and Olmec civilizations", "The Apache and Navajo tribes", "The Cherokee and Sioux tribes"], correctAnswer: "The Aztec and Inca Empires"),
-    Question(text: "What period followed the Late Middle Ages, marking the start of the modern age?", answers: ["The Renaissance and the Age of Exploration", "The Age of Enlightenment", "The Industrial Revolution", "The Roman Era"], correctAnswer: "The Renaissance and the Age of Exploration")
+    Question(text: "What period followed the Late Middle Ages, marking the start of the modern age?", answers: ["The Renaissance and the Age of Exploration", "The Age of Enlightenment", "The Industrial Revolution", "The Roman Era"], correctAnswer: "The Renaissance and the Age of Exploration"),
+    Question(text: "Which family controlled politics during much of the Italian Renaissance?", answers: ["The Medici Family", "The Borgia Family", "The Pazzi Family", "The Sforza Family"], correctAnswer: "The Medici Family"),
+    Question(text: "Who was the explorer that first circumnavigated the globe, proving that the Earth is round?", answers: ["Christopher Columbus", "Ferdinand Magellan", "Marco Polo", "Vasco da Gama"], correctAnswer: "Ferdinand Magellan"),
+    Question(text: "Who was the famous Renaissance artist known for works such as the 'Mona Lisa' and 'The Last Supper'?", answers: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], correctAnswer: "Leonardo da Vinci")
   ]
   
   init() {

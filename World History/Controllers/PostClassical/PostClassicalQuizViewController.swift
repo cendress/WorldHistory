@@ -8,7 +8,7 @@
 import UIKit
 
 class PostClassicalQuizViewController: UIViewController {
-
+  
   @IBOutlet weak var questionLabel: UILabel!
   @IBOutlet weak var progressBar: UIProgressView!
   @IBOutlet weak var choice1Button: UIButton!
@@ -42,11 +42,7 @@ class PostClassicalQuizViewController: UIViewController {
     let answerButtons = [choice1Button, choice2Button, choice3Button, choice4Button]
     for (index, button) in answerButtons.enumerated() {
       button?.setTitle(question.shuffledAnswers[index], for: .normal)
-      if let correctIndex = question.answers.firstIndex(of: question.correctAnswer) {
-        button?.tag = correctIndex
-      } else {
-        button?.tag = 0
-      }
+      button?.tag = index
     }
     
     progressBar.progress = Float(currentQuestion + 1) / Float(postClassicalQuizBrain.questions.count)
@@ -114,5 +110,5 @@ class PostClassicalQuizViewController: UIViewController {
       button?.clipsToBounds = true
     }
   }
-
+  
 }

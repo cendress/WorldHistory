@@ -41,16 +41,12 @@ class QuizViewController: UIViewController {
     let answerButtons = [choice1Button, choice2Button, choice3Button, choice4Button]
     for (index, button) in answerButtons.enumerated() {
       button?.setTitle(question.shuffledAnswers[index], for: .normal)
-      if let correctIndex = question.answers.firstIndex(of: question.correctAnswer) {
-        button?.tag = correctIndex
-      } else {
-        button?.tag = 0
-      }
-      
+      button?.tag = index
     }
     
     progressBar.progress = Float(currentQuestion + 1) / Float(quizBrain.questions.count)
   }
+  
   
   
   func checkAnswer(_ sender: UIButton) {
