@@ -69,6 +69,10 @@ class HomeViewController: UIViewController {
     performSegue(withIdentifier: "goToModern", sender: self)
   }
   
+  @IBAction func contemporaryButtonTapped(_ sender: UIButton) {
+    performSegue(withIdentifier: "goToContemporary", sender: self)
+  }
+  
 }
 
 

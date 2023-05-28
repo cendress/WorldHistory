@@ -18,6 +18,12 @@
 		9D10BBF52A22425C000B653E /* ModernReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BBF42A22425C000B653E /* ModernReadViewController.swift */; };
 		9D10BBF72A224297000B653E /* ModernVocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BBF62A224297000B653E /* ModernVocabularyTableViewController.swift */; };
 		9D10BBF92A2242B4000B653E /* ModernQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BBF82A2242B4000B653E /* ModernQuizViewController.swift */; };
+		9D10BBFC2A23911E000B653E /* ContemporaryReadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BBFB2A23911E000B653E /* ContemporaryReadingText.swift */; };
+		9D10BBFE2A23913D000B653E /* ContemporaryQuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BBFD2A23913D000B653E /* ContemporaryQuizBrain.swift */; };
+		9D10BC012A2391C2000B653E /* ContemporaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BC002A2391C2000B653E /* ContemporaryTabController.swift */; };
+		9D10BC032A2391E0000B653E /* ContemporaryReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BC022A2391E0000B653E /* ContemporaryReadViewController.swift */; };
+		9D10BC052A239205000B653E /* ContemporaryVocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BC042A239205000B653E /* ContemporaryVocabularyTableViewController.swift */; };
+		9D10BC072A239276000B653E /* ContemporaryQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10BC062A239276000B653E /* ContemporaryQuizViewController.swift */; };
 		9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D322A1CF2E10023A80D /* ReadViewController.swift */; };
 		9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */; };
 		9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D162D362A1CF3E90023A80D /* QuizViewController.swift */; };
@@ -55,6 +61,12 @@
 		9D10BBF42A22425C000B653E /* ModernReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernReadViewController.swift; sourceTree = "<group>"; };
 		9D10BBF62A224297000B653E /* ModernVocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernVocabularyTableViewController.swift; sourceTree = "<group>"; };
 		9D10BBF82A2242B4000B653E /* ModernQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernQuizViewController.swift; sourceTree = "<group>"; };
+		9D10BBFB2A23911E000B653E /* ContemporaryReadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryReadingText.swift; sourceTree = "<group>"; };
+		9D10BBFD2A23913D000B653E /* ContemporaryQuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryQuizBrain.swift; sourceTree = "<group>"; };
+		9D10BC002A2391C2000B653E /* ContemporaryTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryTabController.swift; sourceTree = "<group>"; };
+		9D10BC022A2391E0000B653E /* ContemporaryReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryReadViewController.swift; sourceTree = "<group>"; };
+		9D10BC042A239205000B653E /* ContemporaryVocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryVocabularyTableViewController.swift; sourceTree = "<group>"; };
+		9D10BC062A239276000B653E /* ContemporaryQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemporaryQuizViewController.swift; sourceTree = "<group>"; };
 		9D162D322A1CF2E10023A80D /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		9D162D342A1CF3C00023A80D /* VocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTableViewController.swift; sourceTree = "<group>"; };
 		9D162D362A1CF3E90023A80D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +134,26 @@
 			path = Modern;
 			sourceTree = "<group>";
 		};
+		9D10BBFA2A2390CE000B653E /* Contemporary */ = {
+			isa = PBXGroup;
+			children = (
+				9D10BBFB2A23911E000B653E /* ContemporaryReadingText.swift */,
+				9D10BBFD2A23913D000B653E /* ContemporaryQuizBrain.swift */,
+			);
+			path = Contemporary;
+			sourceTree = "<group>";
+		};
+		9D10BBFF2A23914C000B653E /* Contemporary */ = {
+			isa = PBXGroup;
+			children = (
+				9D10BC002A2391C2000B653E /* ContemporaryTabController.swift */,
+				9D10BC022A2391E0000B653E /* ContemporaryReadViewController.swift */,
+				9D10BC042A239205000B653E /* ContemporaryVocabularyTableViewController.swift */,
+				9D10BC062A239276000B653E /* ContemporaryQuizViewController.swift */,
+			);
+			path = Contemporary;
+			sourceTree = "<group>";
+		};
 		9D162D2C2A1CF2190023A80D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +164,7 @@
 				9D6BF0F02A1FE8F900FA160E /* Ancient History */,
 				9D6BF1022A20FF5200FA160E /* PostClassical */,
 				9D10BBF12A22419D000B653E /* Modern */,
+				9D10BBFF2A23914C000B653E /* Contemporary */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +204,7 @@
 				9D6BF0F52A20EDCA00FA160E /* Ancient History */,
 				9D10BBCC2A2102DB000B653E /* PostClassical */,
 				9D10BBEC2A224075000B653E /* Modern */,
+				9D10BBFA2A2390CE000B653E /* Contemporary */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D10BBFE2A23913D000B653E /* ContemporaryQuizBrain.swift in Sources */,
 				9D6BF1042A20FFA600FA160E /* PostClassicalTabController.swift in Sources */,
 				9D6BF0FF2A20F6E200FA160E /* AncientQuizBrain.swift in Sources */,
 				9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */,
@@ -338,7 +373,9 @@
 				9D10BBD42A210C3D000B653E /* PostClassicalQuizBrain.swift in Sources */,
 				9D10BBD02A2103A0000B653E /* PostClassicalReadViewController.swift in Sources */,
 				9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */,
+				9D10BC052A239205000B653E /* ContemporaryVocabularyTableViewController.swift in Sources */,
 				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
+				9D10BBFC2A23911E000B653E /* ContemporaryReadingText.swift in Sources */,
 				9D162D392A1D09CF0023A80D /* ReadingText.swift in Sources */,
 				9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */,
 				9D10BBF52A22425C000B653E /* ModernReadViewController.swift in Sources */,
@@ -347,6 +384,7 @@
 				9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */,
 				9D10BBF02A22415B000B653E /* ModernQuizBrain.swift in Sources */,
 				9D10BBCE2A210319000B653E /* PostClassicalReadingText.swift in Sources */,
+				9D10BC012A2391C2000B653E /* ContemporaryTabController.swift in Sources */,
 				9D10BBD62A2114E7000B653E /* PostClassicalQuizViewController.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D10BBF32A2241E0000B653E /* ModernTabController.swift in Sources */,
@@ -355,6 +393,8 @@
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
 				9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */,
 				9D6BF0F92A20F2D300FA160E /* AncientVocabularyTableViewController.swift in Sources */,
+				9D10BC072A239276000B653E /* ContemporaryQuizViewController.swift in Sources */,
+				9D10BC032A2391E0000B653E /* ContemporaryReadViewController.swift in Sources */,
 				9D162D3C2A1D49130023A80D /* DefinitionViewController.swift in Sources */,
 				9D10BBEE2A2240D7000B653E /* ModernReadingText.swift in Sources */,
 			);
