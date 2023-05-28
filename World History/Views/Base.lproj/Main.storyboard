@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,10 +57,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EjC-Xw-toR">
-                                <rect key="frame" x="20" y="175" width="353" height="574"/>
+                                <rect key="frame" x="20" y="175" width="353" height="623"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12B-f4-MMJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="94.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="104.66666666666667"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Prehistory">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -74,7 +73,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-Rr-qAn">
-                                        <rect key="frame" x="0.0" y="119.66666666666669" width="353" height="95"/>
+                                        <rect key="frame" x="0.0" y="129.66666666666669" width="353" height="104.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ancient History">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -86,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-4A-Y5R">
-                                        <rect key="frame" x="0.0" y="239.66666666666666" width="353" height="94.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="259.33333333333331" width="353" height="104.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Post-Classical Era">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -98,7 +97,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3t-Gg-kLC">
-                                        <rect key="frame" x="0.0" y="359.33333333333337" width="353" height="95"/>
+                                        <rect key="frame" x="0.0" y="388.66666666666663" width="353" height="104.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modern Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -110,7 +109,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-q1-uUA">
-                                        <rect key="frame" x="0.0" y="479.33333333333343" width="353" height="94.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="518.33333333333337" width="353" height="104.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Contemporary Period">
                                             <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
@@ -156,11 +155,11 @@
             <objects>
                 <viewController id="kzj-Ix-aGz" customClass="ReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftq-AQ-FEO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njg-Oq-aoe">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-RA-dtr">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
@@ -190,7 +189,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7td-hG-GFd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Njg-Oq-aoe" firstAttribute="trailing" secondItem="7td-hG-GFd" secondAttribute="trailing" id="Ahx-bb-c7t"/>
                             <constraint firstItem="tX5-RA-dtr" firstAttribute="width" secondItem="ftq-AQ-FEO" secondAttribute="width" id="NfE-Ty-9AO"/>
@@ -214,9 +213,9 @@
             <objects>
                 <tableViewController id="kYv-oq-UlP" customClass="VocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6ss-l4-c1A">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="p5L-vp-GKD">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -244,11 +243,11 @@
             <objects>
                 <viewController id="kPr-fy-Pab" customClass="QuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6n-jH-yjX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3GS-4n-FdG">
-                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
+                                <rect key="frame" x="20" y="44" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mFS-h2-btz">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
@@ -419,7 +418,7 @@
             <objects>
                 <navigationController id="A9M-kM-XZ3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="eLT-xF-ACp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="p7a-ES-6dp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p7a-ES-6dp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -444,7 +443,7 @@
             <objects>
                 <navigationController id="63P-hm-IzR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="773-oo-eex"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="XO1-pt-VCY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XO1-pt-VCY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -469,7 +468,7 @@
             <objects>
                 <navigationController id="uNL-L1-LXp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="o9W-Pw-HSx"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="bR1-8k-Zyn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bR1-8k-Zyn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -539,7 +538,7 @@
             <objects>
                 <navigationController id="MMc-hD-XAg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="i89-4o-ttJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="Vls-9i-2h0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Vls-9i-2h0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -564,7 +563,7 @@
             <objects>
                 <navigationController id="Bbh-Bv-OxK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="6y0-ru-Y7Z"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="ric-89-emQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ric-89-emQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -589,7 +588,7 @@
             <objects>
                 <navigationController id="5UN-hm-9Ou" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="Qjj-a0-wqg"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Hpr-Hm-TjY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hpr-Hm-TjY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -614,11 +613,11 @@
             <objects>
                 <viewController id="7rp-o2-xxl" customClass="AncientReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qt9-FI-7m7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzM-Fy-b9e">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej3-1H-OEd">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
@@ -648,7 +647,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JEl-7U-46t"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ej3-1H-OEd" firstAttribute="width" secondItem="qt9-FI-7m7" secondAttribute="width" id="9bL-RA-qEa"/>
                             <constraint firstItem="RzM-Fy-b9e" firstAttribute="trailing" secondItem="JEl-7U-46t" secondAttribute="trailing" id="G7B-F2-VqF"/>
@@ -672,9 +671,9 @@
             <objects>
                 <tableViewController id="SrT-OX-bdf" customClass="AncientVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="saE-hS-Xzi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="448-SN-KL7">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -702,11 +701,11 @@
             <objects>
                 <viewController id="jX7-Zv-mSN" customClass="AncientQuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBq-dy-VVQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-vb-XKe">
-                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
+                                <rect key="frame" x="20" y="44" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dx2-Oj-lxN">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
@@ -893,7 +892,7 @@
             <objects>
                 <navigationController id="rHq-kK-TMg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="GQp-vI-Lk4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="MxB-2g-aF1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MxB-2g-aF1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -918,7 +917,7 @@
             <objects>
                 <navigationController id="3Yt-jX-jo4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="O00-k5-jeZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="xPC-Zi-3I2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xPC-Zi-3I2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -943,7 +942,7 @@
             <objects>
                 <navigationController id="XBi-4F-gxi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="RlP-qX-ZjB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="YqL-0b-ewc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YqL-0b-ewc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -968,11 +967,11 @@
             <objects>
                 <viewController id="KAm-7d-eUB" customClass="PostClassicalReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BuP-Vi-fcS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR2-sg-ggF">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBr-Dk-wzu">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
@@ -1002,7 +1001,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BQa-xG-HXc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tR2-sg-ggF" firstAttribute="top" secondItem="BuP-Vi-fcS" secondAttribute="top" id="5XV-dA-HrY"/>
                             <constraint firstItem="NBr-Dk-wzu" firstAttribute="width" secondItem="BuP-Vi-fcS" secondAttribute="width" id="7Ks-Tn-Ff3"/>
@@ -1026,9 +1025,9 @@
             <objects>
                 <tableViewController id="zl6-iQ-3rg" customClass="PostClassicalVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3kI-9n-iCY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="ktj-BS-rXj">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -1056,11 +1055,11 @@
             <objects>
                 <viewController id="Avx-ZK-QSO" customClass="PostClassicalQuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fKY-nU-ha2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-v4-yAN">
-                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
+                                <rect key="frame" x="20" y="44" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oZP-YH-uUL">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
@@ -1231,7 +1230,7 @@
             <objects>
                 <navigationController id="2Ii-4Y-5o2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="aJB-9y-gRV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="8KQ-4r-bn5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8KQ-4r-bn5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -1256,7 +1255,7 @@
             <objects>
                 <navigationController id="DpH-GX-OjK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="nKQ-4T-rD8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="lCs-zy-5vk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lCs-zy-5vk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -1281,7 +1280,7 @@
             <objects>
                 <navigationController id="W1N-GK-l9v" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="INP-Gs-BZS"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="YvU-Xy-eub">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YvU-Xy-eub">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -1306,11 +1305,11 @@
             <objects>
                 <viewController id="1nm-R4-1mV" customClass="ModernReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eko-hV-CYH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-4P-vvR">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-q2-9N8">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
@@ -1340,7 +1339,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xru-v2-u7i"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yxd-4P-vvR" firstAttribute="trailing" secondItem="xru-v2-u7i" secondAttribute="trailing" id="99u-sp-JlJ"/>
                             <constraint firstItem="yxd-4P-vvR" firstAttribute="top" secondItem="Eko-hV-CYH" secondAttribute="top" id="9z2-KM-A84"/>
@@ -1364,9 +1363,9 @@
             <objects>
                 <tableViewController id="Sa7-MF-aPJ" customClass="ModernVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ftw-Ro-4la">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="NPM-M0-FkD">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -1394,11 +1393,11 @@
             <objects>
                 <viewController id="07W-Va-WdS" customClass="ModernQuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pY2-Ly-Jzf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-0X-wUh">
-                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
+                                <rect key="frame" x="20" y="44" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hgc-gE-qxL">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
@@ -1547,7 +1546,7 @@
                 <navigationController id="tge-UU-BHq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="ycB-b5-kgS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="HJQ-II-mCv">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
@@ -1569,7 +1568,7 @@
             <objects>
                 <navigationController id="6wS-5t-qPM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="eoy-yn-KGO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="7UO-fP-QFJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7UO-fP-QFJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -1594,8 +1593,8 @@
             <objects>
                 <navigationController id="Z8X-MA-Uop" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="text.book.closed" catalog="system" id="jit-FM-kTe"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="MQd-zz-szo">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MQd-zz-szo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <color key="barTintColor" name="BackgroundColor"/>
@@ -1619,7 +1618,7 @@
             <objects>
                 <navigationController id="jp0-OC-ER6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="f0y-wI-1Dl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="q8z-dZ-AiL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q8z-dZ-AiL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -1644,11 +1643,11 @@
             <objects>
                 <viewController id="mVE-Yv-2WV" customClass="ContemporaryReadViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TLB-3p-8bd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-ou-QdC">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1D-8E-nam">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.333333333333336"/>
@@ -1678,7 +1677,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mwn-LJ-rNR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="n1D-8E-nam" firstAttribute="height" secondItem="TLB-3p-8bd" secondAttribute="height" multiplier="11.9048" priority="250" id="1iF-9K-UI6"/>
                             <constraint firstItem="gFN-ou-QdC" firstAttribute="trailing" secondItem="Mwn-LJ-rNR" secondAttribute="trailing" id="DXK-DI-wqM"/>
@@ -1702,9 +1701,9 @@
             <objects>
                 <tableViewController id="W9c-kj-QGN" customClass="ContemporaryVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LVg-cR-5xZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TermCell" id="76H-jK-fNN">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -1732,11 +1731,11 @@
             <objects>
                 <viewController id="WPy-Mz-GRD" customClass="ContemporaryQuizViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjX-qj-L2b">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Del-w4-NgZ">
-                                <rect key="frame" x="20" y="0.0" width="353" height="749"/>
+                                <rect key="frame" x="20" y="44" width="353" height="749"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zYL-Cz-txc">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
@@ -1859,7 +1858,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HDz-hV-oRr"/>
         <segue reference="tZn-EX-gW7"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1877,8 +1875,5 @@
         <namedColor name="TextColor">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
