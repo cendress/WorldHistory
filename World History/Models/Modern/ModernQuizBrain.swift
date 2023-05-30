@@ -23,15 +23,15 @@ struct ModernQuizBrain {
     Question(text: "World War I began in which year?", answers: ["1914", "1917", "1919", "1922"], correctAnswer: "1914"),
     Question(text: "What event during the late modern period caused an economic depression in many countries?", answers: ["The Great Famine", "The Stock Market Crash of 1929", "The Black Plague", "The World War II"], correctAnswer: "The Stock Market Crash of 1929"),
     Question(text: "What major event led to widespread decolonization in the mid-20th century?", answers: ["World War I", "World War II", "The Cold War", "The Korean War"], correctAnswer: "World War II"),
-    Question(text: "Who was a significant leader during the civil rights movement in the United States?", answers: ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks", "All of the above"], correctAnswer: "All of the above"),
-    Question(text: "What was the period of geopolitical tension between the United States and the Soviet Union following World War II called?", answers: ["The World War III", "The Imperial Age", "The Cold War", "The Space Race"], correctAnswer: "The Cold War"),
-    Question(text: "What significant event marked the end of apartheid in South Africa?", answers: ["The election of Nelson Mandela", "The assassination of Martin Luther King Jr.", "The Soweto uprising", "The Sharpeville massacre"], correctAnswer: "The election of Nelson Mandela"),
-    Question(text: "What term describes the period of rapid growth in the use of digital technology and information systems in the late 20th century?", answers: ["The Digital Revolution", "The Industrial Revolution", "The Technological Era", "The Age of Information"], correctAnswer: "The Digital Revolution"),
     Question(text: "What was the main cause of the French Revolution?", answers: ["Economic crisis", "Religious conflict", "Foreign invasion", "Desire for industrialization"], correctAnswer: "Economic crisis"),
     Question(text: "Who is considered the founder of modern science?", answers: ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nicolaus Copernicus"], correctAnswer: "Galileo Galilei"),
-    Question(text: "What was the movement of African Americans from the rural south to the urban north in the United States called?", answers: ["The Harlem Renaissance", "The Great Migration", "The Civil Rights Movement", "The American Dream"], correctAnswer: "The Great Migration"),
     Question(text: "What was the first successful vaccine developed for?", answers: ["Polio", "Smallpox", "Tuberculosis", "Measles"], correctAnswer: "Smallpox"),
-    Question(text: "What was the main objective of the feminist movement in the 1960s and 1970s, often referred to as the 'Second Wave'?", answers: ["Suffrage rights", "Workplace equality", "Reproductive rights", "All of the above"], correctAnswer: "All of the above")
+    Question(text: "What event, taking place from 1845 to 1852, caused mass starvation and emigration in Ireland?", answers: ["The Great Famine", "The French Revolution", "The Industrial Revolution", "The Irish Rebellion"], correctAnswer: "The Great Famine"),
+    Question(text: "Who invented the light bulb in 1879?", answers: ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Isaac Newton"], correctAnswer: "Thomas Edison"),
+    Question(text: "Which country was the first to implement compulsory universal education?", answers: ["England", "Germany", "United States", "France"], correctAnswer: "Germany"),
+    Question(text: "What major social and economic change was prompted by the introduction of the steam engine?", answers: ["The Industrial Revolution", "The Renaissance", "The Enlightenment", "The Reformation"], correctAnswer: "The Industrial Revolution"),
+    Question(text: "In 1911, which Chinese dynasty was overthrown, leading to the establishment of the Republic of China?", answers: ["Qing Dynasty", "Ming Dynasty", "Han Dynasty", "Tang Dynasty"], correctAnswer: "Qing Dynasty"),
+    Question(text: "Which U.S. constitutional amendment, ratified in 1920, granted women the right to vote?", answers: ["15th Amendment", "19th Amendment", "21st Amendment", "26th Amendment"], correctAnswer: "19th Amendment")
   ]
   
   init() {

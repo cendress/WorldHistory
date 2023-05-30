@@ -9,6 +9,7 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
   let term: VocabularyTerm
+  let textView = UITextView()
   
   init(term: VocabularyTerm) {
     self.term = term
@@ -24,21 +25,45 @@ class DefinitionViewController: UIViewController {
     
     title = term.term
     view.backgroundColor = UIColor(named: "BackgroundColor")
-    setupLabel()
+    setupTextView()
+    setupHideShowButton()
   }
   
-  private func setupLabel() {
-    let label = UILabel()
-    label.text = term.definition
-    label.textColor = UIColor(named: "TextColor")
-    label.numberOfLines = 0
-    label.font = UIFont(name: "Avenir-Book", size: 22)
+  private func setupTextView() {
+    textView.text = term.definition
+    textView.textColor = UIColor(named: "TextColor")
+    textView.font = UIFont(name: "Avenir-Book", size: 22)
+    textView.backgroundColor = UIColor(named: "BackgroundColor")
+    textView.translatesAutoresizingMaskIntoConstraints = false
+    textView.isEditable = false
+    
+    view.addSubview(textView)
     
     let padding: CGFloat = 20
-    label.frame = CGRect(x: padding, y: padding, width: view.bounds.width - 2 * padding, height: view.bounds.height - 2 * padding)
-    
-    label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    
-    view.addSubview(label)
+    NSLayoutConstraint.activate([
+      textView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
+      textView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding),
+      textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
+      textView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding)
+    ])
+  }
+  
+  private func setupHideShowButton() {
+    let hideShowButton = UIBarButtonItem(title: "Hide", style: .plain, target: self, action: #selector(hideShowTapped))
+    navigationItem.rightBarButtonItem = hideShowButton
+  }
+  
+  @objc private func hideShowTapped() {
+    if navigationItem.rightBarButtonItem?.title == "Hide" {
+      navigationItem.rightBarButtonItem?.title = "Show"
+      textView.isHidden = true
+    } else {
+      navigationItem.rightBarButtonItem?.title = "Hide"
+      textView.isHidden = false
+    }
   }
 }
+
+
+
+

@@ -12,6 +12,9 @@ class HomeViewController: UIViewController {
   @IBOutlet var timePeriodButtons: [UIButton]!
   @IBOutlet weak var stackView: UIStackView!
   
+  private let buttonStyle = ButtonStyle()
+  private let gradientProvider = GradientProvider()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -20,13 +23,30 @@ class HomeViewController: UIViewController {
   }
   
   private func setupButtons() {
-    for button in timePeriodButtons {
-      setupButtonStyle(button)
-      setupButtonGradient(button)
+    timePeriodButtons.forEach { button in
+      buttonStyle.apply(to: button)
+      gradientProvider.apply(to: button)
     }
   }
   
-  private func setupButtonStyle(_ button: UIButton) {
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    timePeriodButtons.forEach { button in
+      gradientProvider.updateFrame(for: button)
+    }
+  }
+  
+  @IBAction func buttonTapped(_ sender: UIButton) {
+    guard let index = timePeriodButtons.firstIndex(of: sender) else { return }
+    
+    let segues = ["goToPrehistory", "goToAncientHistory", "goToPostClassical", "goToModern", "goToContemporary"]
+    performSegue(withIdentifier: segues[index], sender: self)
+  }
+}
+
+class ButtonStyle {
+  func apply(to button: UIButton) {
     button.layer.cornerRadius = 25.0
     button.layer.borderWidth = 4
     button.layer.borderColor = UIColor.white.cgColor
@@ -36,44 +56,25 @@ class HomeViewController: UIViewController {
     button.layer.shadowOpacity = 1.0
     button.clipsToBounds = true
   }
+}
+
+class GradientProvider {
+  private var gradients: [UIButton: CAGradientLayer] = [:]
   
-  private func setupButtonGradient(_ button: UIButton) {
+  func apply(to button: UIButton) {
     let gradient = CAGradientLayer()
     gradient.frame = button.bounds
     gradient.colors = [UIColor(red: 83/255, green: 113/255, blue: 136/255, alpha: 1).cgColor, UIColor.white.cgColor]
     button.layer.insertSublayer(gradient, at: 0)
+    
+    gradients[button] = gradient
   }
   
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    for button in timePeriodButtons {
-      if let gradient = button.layer.sublayers?.first as? CAGradientLayer {
-        gradient.frame = button.bounds
-      }
-    }
+  func updateFrame(for button: UIButton) {
+    gradients[button]?.frame = button.bounds
   }
-  
-  @IBAction func prehistoryButtonTapped(_ sender: UIButton) {
-    performSegue(withIdentifier: "goToPrehistory", sender: self)
-  }
-  
-  @IBAction func ancientHistoryButtonTapped(_ sender: UIButton) {
-    performSegue(withIdentifier: "goToAncientHistory", sender: self)
-  }
-  
-  @IBAction func postClassicalButtonTapped(_ sender: UIButton) {
-    performSegue(withIdentifier: "goToPostClassical", sender: self)
-  }
-  
-  @IBAction func modernButtonTapped(_ sender: UIButton) {
-    performSegue(withIdentifier: "goToModern", sender: self)
-  }
-  
-  @IBAction func contemporaryButtonTapped(_ sender: UIButton) {
-    performSegue(withIdentifier: "goToContemporary", sender: self)
-  }
-  
 }
+
 
 
 

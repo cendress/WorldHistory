@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2g5-wx-qOb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -68,7 +69,7 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="prehistoryButtonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="9h0-XU-qHI"/>
+                                            <action selector="buttonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="Xdk-Ue-yob"/>
                                             <segue destination="bKJ-1i-4R1" kind="presentation" identifier="goToPrehistory" modalPresentationStyle="fullScreen" id="zv1-5e-NUW"/>
                                         </connections>
                                     </button>
@@ -81,7 +82,7 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="ancientHistoryButtonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="FO4-dp-sT9"/>
+                                            <action selector="buttonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="Z8G-jE-P0C"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-4A-Y5R">
@@ -93,7 +94,7 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="postClassicalButtonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="CIt-va-gZb"/>
+                                            <action selector="buttonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="bDc-zi-eOP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3t-Gg-kLC">
@@ -105,7 +106,7 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="modernButtonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="JV2-RJ-fsR"/>
+                                            <action selector="buttonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="uYj-Je-Wf9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-q1-uUA">
@@ -117,7 +118,7 @@
                                             <color key="baseBackgroundColor" name="BackgroundColor2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="contemporaryButtonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="cWj-n3-FLO"/>
+                                            <action selector="buttonTapped:" destination="ff2-I2-q2w" eventType="touchUpInside" id="L6D-h7-7eF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -208,7 +209,7 @@
             </objects>
             <point key="canvasLocation" x="1983.9694656488548" y="523.94366197183103"/>
         </scene>
-        <!--Vocabulary-->
+        <!--Terms-->
         <scene sceneID="F7y-LN-Xfn">
             <objects>
                 <tableViewController id="kYv-oq-UlP" customClass="VocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -232,7 +233,7 @@
                             <outlet property="delegate" destination="kYv-oq-UlP" id="JGo-v8-tR9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vocabulary" id="h9O-37-taG"/>
+                    <navigationItem key="navigationItem" title="Terms" id="h9O-37-taG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Noo-tT-pER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -666,7 +667,7 @@
             </objects>
             <point key="canvasLocation" x="5369" y="411"/>
         </scene>
-        <!--Vocabulary-->
+        <!--Terms-->
         <scene sceneID="cFD-ya-Djo">
             <objects>
                 <tableViewController id="SrT-OX-bdf" customClass="AncientVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -690,7 +691,7 @@
                             <outlet property="delegate" destination="SrT-OX-bdf" id="mHD-xF-LBU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vocabulary" id="iWO-rb-EyO"/>
+                    <navigationItem key="navigationItem" title="Terms" id="iWO-rb-EyO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbP-ph-0zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1020,7 +1021,7 @@
             </objects>
             <point key="canvasLocation" x="1984" y="2652"/>
         </scene>
-        <!--Vocabulary-->
+        <!--Terms-->
         <scene sceneID="A8L-0I-ej4">
             <objects>
                 <tableViewController id="zl6-iQ-3rg" customClass="PostClassicalVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -1044,7 +1045,7 @@
                             <outlet property="delegate" destination="zl6-iQ-3rg" id="63l-YB-XfK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vocabulary" id="Gbh-Vw-P3w"/>
+                    <navigationItem key="navigationItem" title="Terms" id="Gbh-Vw-P3w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdZ-CH-Nzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1358,7 +1359,7 @@
             </objects>
             <point key="canvasLocation" x="-1222" y="524"/>
         </scene>
-        <!--Vocabulary-->
+        <!--Terms-->
         <scene sceneID="man-RY-tEU">
             <objects>
                 <tableViewController id="Sa7-MF-aPJ" customClass="ModernVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -1382,7 +1383,7 @@
                             <outlet property="delegate" destination="Sa7-MF-aPJ" id="1y1-hN-2lE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vocabulary" id="Vjv-IG-5oz"/>
+                    <navigationItem key="navigationItem" title="Terms" id="Vjv-IG-5oz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjF-EO-3cy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1696,7 +1697,7 @@
             </objects>
             <point key="canvasLocation" x="1769" y="-1653"/>
         </scene>
-        <!--Vocabulary-->
+        <!--Terms-->
         <scene sceneID="TUt-Ub-mqr">
             <objects>
                 <tableViewController id="W9c-kj-QGN" customClass="ContemporaryVocabularyTableViewController" customModule="World_History" customModuleProvider="target" sceneMemberID="viewController">
@@ -1720,7 +1721,7 @@
                             <outlet property="delegate" destination="W9c-kj-QGN" id="cgB-ch-9RA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vocabulary" id="Z3y-kd-DCK"/>
+                    <navigationItem key="navigationItem" title="Terms" id="Z3y-kd-DCK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N91-wJ-fmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

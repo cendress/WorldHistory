@@ -63,7 +63,7 @@ class AncientQuizViewController: UIViewController {
     resultLabel.text = correct ? "Correct!" : "Incorrect!"
     resultLabel.textColor = correct ? UIColor.green : UIColor.red
     
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
       self.resultLabel.isHidden = true
     }
   }
