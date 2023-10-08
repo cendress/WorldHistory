@@ -38,8 +38,8 @@
 		9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */; };
 		9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */; };
 		9D45A9AD2A1BB2B8006524DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9AB2A1BB2B8006524DA /* Main.storyboard */; };
-		9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */; };
 		9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9B12A1BB2B9006524DA /* Assets.xcassets */; };
+		9D69DF8F2AB617BC002E4CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */; };
 		9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */; };
 		9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */; };
 		9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F62A20EDEC00FA160E /* AncientReadingText.swift */; };
@@ -47,6 +47,7 @@
 		9D6BF0FF2A20F6E200FA160E /* AncientQuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0FE2A20F6E200FA160E /* AncientQuizBrain.swift */; };
 		9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF1002A20F8D900FA160E /* AncientQuizViewController.swift */; };
 		9D6BF1042A20FFA600FA160E /* PostClassicalTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF1032A20FFA600FA160E /* PostClassicalTabController.swift */; };
+		9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB966D22AD319200067F269 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,9 +83,9 @@
 		9D45A9A72A1BB2B8006524DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D45A9AC2A1BB2B8006524DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D45A9AF2A1BB2B8006524DA /* World_History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = World_History.xcdatamodel; sourceTree = "<group>"; };
 		9D45A9B12A1BB2B9006524DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D45A9B62A1BB2B9006524DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
 		9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadViewController.swift; sourceTree = "<group>"; };
 		9D6BF0F62A20EDEC00FA160E /* AncientReadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadingText.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		9D6BF0FE2A20F6E200FA160E /* AncientQuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientQuizBrain.swift; sourceTree = "<group>"; };
 		9D6BF1002A20F8D900FA160E /* AncientQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientQuizViewController.swift; sourceTree = "<group>"; };
 		9D6BF1032A20FFA600FA160E /* PostClassicalTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClassicalTabController.swift; sourceTree = "<group>"; };
+		9DB966D22AD319200067F269 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,16 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				9D45A9AB2A1BB2B8006524DA /* Main.storyboard */,
+				9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */,
+				9DB966D22AD319200067F269 /* CustomAlertView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9D162D2E2A1CF2640023A80D /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */,
-			);
-			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		9D162D2F2A1CF27C0023A80D /* Resources */ = {
@@ -252,7 +248,6 @@
 				9D162D3A2A1D0B0C0023A80D /* Models */,
 				9D162D2D2A1CF2390023A80D /* Views */,
 				9D162D2C2A1CF2190023A80D /* Controllers */,
-				9D162D2E2A1CF2640023A80D /* Core Data */,
 				9D45A9B62A1BB2B9006524DA /* Info.plist */,
 			);
 			path = "World History";
@@ -347,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D69DF8F2AB617BC002E4CDB /* LaunchScreen.storyboard in Resources */,
 				9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */,
 				9D45A9AD2A1BB2B8006524DA /* Main.storyboard in Resources */,
 			);
@@ -373,6 +369,7 @@
 				9D10BBD42A210C3D000B653E /* PostClassicalQuizBrain.swift in Sources */,
 				9D10BBD02A2103A0000B653E /* PostClassicalReadViewController.swift in Sources */,
 				9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */,
+				9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */,
 				9D10BC052A239205000B653E /* ContemporaryVocabularyTableViewController.swift in Sources */,
 				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
 				9D10BBFC2A23911E000B653E /* ContemporaryReadingText.swift in Sources */,
@@ -391,7 +388,6 @@
 				9D162D422A1E8D3C0023A80D /* Question.swift in Sources */,
 				9D10BBF72A224297000B653E /* ModernVocabularyTableViewController.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
-				9D45A9B02A1BB2B8006524DA /* World_History.xcdatamodeld in Sources */,
 				9D6BF0F92A20F2D300FA160E /* AncientVocabularyTableViewController.swift in Sources */,
 				9D10BC072A239276000B653E /* ContemporaryQuizViewController.swift in Sources */,
 				9D10BC032A2391E0000B653E /* ContemporaryReadViewController.swift in Sources */,
@@ -464,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -518,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,12 +534,14 @@
 				DEVELOPMENT_TEAM = 42VHV36Q58;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "World History/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "World History";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,6 +549,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christopherendress.World-History";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,12 +568,14 @@
 				DEVELOPMENT_TEAM = 42VHV36Q58;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "World History/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "World History";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +583,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christopherendress.World-History";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -608,19 +614,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9D45A9AE2A1BB2B8006524DA /* World_History.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9D45A9AF2A1BB2B8006524DA /* World_History.xcdatamodel */,
-			);
-			currentVersion = 9D45A9AF2A1BB2B8006524DA /* World_History.xcdatamodel */;
-			path = World_History.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9D45A99A2A1BB2B8006524DA /* Project object */;
 }

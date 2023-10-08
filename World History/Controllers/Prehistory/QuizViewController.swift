@@ -47,8 +47,6 @@ class QuizViewController: UIViewController {
     progressBar.progress = Float(currentQuestion + 1) / Float(quizBrain.questions.count)
   }
   
-  
-  
   func checkAnswer(_ sender: UIButton) {
     let correctAnswerIndex = quizBrain.questions[currentQuestion].correctAnswerIndex
     if sender.tag == correctAnswerIndex {
@@ -82,7 +80,7 @@ class QuizViewController: UIViewController {
   
   func showEndQuizAlert() {
     let resultInPercentage = Int(round(Double(score) / Double(quizBrain.questions.count) * 100.0))
-    let alertController = UIAlertController(title: "Quiz Ended", message: "You scored \(resultInPercentage)%", preferredStyle: .alert)
+    let alertController = CustomAlertView(title: "Quiz Ended", message: "You scored \(resultInPercentage)%")
     let restartAction = UIAlertAction(title: "Ok", style: .default) { (_) in
       self.resetQuiz()
     }
