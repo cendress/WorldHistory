@@ -16,7 +16,7 @@ class CustomAlertView: UIView {
   init(title: String, message: String) {
     super.init(frame: CGRect(x: 0, y: 0, width: 280, height: 150))
     self.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
-    self.backgroundColor = .white
+    self.backgroundColor = UIColor.systemBackground
     self.layer.cornerRadius = 10
     self.layer.shadowColor = UIColor.black.cgColor
     self.layer.shadowOpacity = 0.5
@@ -24,12 +24,14 @@ class CustomAlertView: UIView {
     
     titleLabel = UILabel(frame: CGRect(x: 20, y: 20, width: 240, height: 25))
     titleLabel.text = title
+    titleLabel.textColor = .label
     titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
     titleLabel.textAlignment = .center
     self.addSubview(titleLabel)
     
     messageLabel = UILabel(frame: CGRect(x: 20, y: 50, width: 240, height: 50))
     messageLabel.text = message
+    messageLabel.textColor = .label
     messageLabel.font = UIFont.systemFont(ofSize: 16)
     messageLabel.textAlignment = .center
     messageLabel.numberOfLines = 0
@@ -37,7 +39,7 @@ class CustomAlertView: UIView {
     
     confirmButton = UIButton(frame: CGRect(x: 40, y: 110, width: 200, height: 30))
     confirmButton.setTitle("Confirm", for: .normal)
-    confirmButton.backgroundColor = .systemBlue
+    confirmButton.backgroundColor = UIColor(named: "BackgroundColor")
     confirmButton.setTitleColor(.white, for: .normal)
     confirmButton.layer.cornerRadius = 15
     confirmButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)

@@ -80,15 +80,21 @@ class QuizViewController: UIViewController {
   
   func showEndQuizAlert() {
     let resultInPercentage = Int(round(Double(score) / Double(quizBrain.questions.count) * 100.0))
-    let alertController = CustomAlertView(title: "Quiz Ended", message: "You scored \(resultInPercentage)%")
-    let restartAction = UIAlertAction(title: "Ok", style: .default) { (_) in
-      self.resetQuiz()
+    let customAlertView = CustomAlertView(title: "Quiz Ended", message: "You scored \(resultInPercentage)%")
+    
+    let overlayView = UIView(frame: UIScreen.main.bounds)
+    overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+    overlayView.addSubview(customAlertView)
+    
+    if let windowScene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+       let currentWindow = windowScene.windows.first {
+      currentWindow.addSubview(overlayView)
     }
-    alertController.addAction(restartAction)
-    self.present(alertController, animated: true, completion: nil)
+    
+    customAlertView.confirmButton.addTarget(self, action: #selector(resetQuiz), for: .touchUpInside)
   }
   
-  func resetQuiz() {
+  @objc func resetQuiz() {
     currentQuestion = 0
     score = 0
     quizBrain = QuizBrain()
