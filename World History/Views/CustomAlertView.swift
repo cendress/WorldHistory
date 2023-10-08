@@ -38,7 +38,7 @@ class CustomAlertView: UIView {
     self.addSubview(messageLabel)
     
     confirmButton = UIButton(frame: CGRect(x: 40, y: 110, width: 200, height: 30))
-    confirmButton.setTitle("Confirm", for: .normal)
+    confirmButton.setTitle("OK", for: .normal)
     confirmButton.backgroundColor = UIColor(named: "BackgroundColor")
     confirmButton.setTitleColor(.white, for: .normal)
     confirmButton.layer.cornerRadius = 15
