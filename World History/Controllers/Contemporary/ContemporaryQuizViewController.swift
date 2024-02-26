@@ -35,7 +35,8 @@ class ContemporaryQuizViewController: UIViewController {
   }
   
   func loadNextQuestion() {
-    scoreLabel.text = "Score: \(score)"
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(contemporaryQuizBrain.questions.count)"
     let question = contemporaryQuizBrain.questions[currentQuestion]
     questionLabel.text = question.text
     
@@ -70,7 +71,8 @@ class ContemporaryQuizViewController: UIViewController {
   }
   
   func updateQuiz() {
-    scoreLabel.text = "Score: \(score)"
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(contemporaryQuizBrain.questions.count)"
     currentQuestion += 1
     
     if currentQuestion < contemporaryQuizBrain.questions.count {
