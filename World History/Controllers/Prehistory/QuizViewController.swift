@@ -27,6 +27,12 @@ class QuizViewController: UIViewController {
       addQuizStartOverlay()
     }
     
+    self.navigationController?.setNavigationBarHidden(true, animated: animated)
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    self.navigationController?.setNavigationBarHidden(false, animated: animated)
   }
   
   override func viewDidLoad() {
@@ -130,20 +136,30 @@ class QuizViewController: UIViewController {
 
 extension UIViewController {
   func addQuizStartOverlay() {
-    let overlayView = UIView(frame: self.view.bounds)
+    let overlayView = UIView()
     overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
     overlayView.tag = 999
+    overlayView.translatesAutoresizingMaskIntoConstraints = false
+    self.view.addSubview(overlayView)
+    
+    let tabBarHeight = self.tabBarController?.tabBar.frame.size.height ?? 0
+    
+    NSLayoutConstraint.activate([
+      overlayView.topAnchor.constraint(equalTo: self.view.topAnchor),
+      overlayView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+      overlayView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+      overlayView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: tabBarHeight)
+    ])
     
     let startButton = UIButton(type: .system)
     startButton.setTitle("Start Quiz", for: .normal)
     startButton.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 22)
     startButton.backgroundColor = UIColor(named: "BackgroundColor2")
     startButton.setTitleColor(UIColor(named: "TextColor"), for: .normal)
-    startButton.layer.borderWidth = 1
+    startButton.layer.borderWidth = 3
     startButton.layer.borderColor = UIColor(named: "TextColor")?.cgColor
     startButton.layer.cornerRadius = 10
     startButton.clipsToBounds = true
-    
     startButton.translatesAutoresizingMaskIntoConstraints = false
     overlayView.addSubview(startButton)
     
@@ -155,8 +171,6 @@ extension UIViewController {
     ])
     
     startButton.addTarget(self, action: #selector(removeQuizStartOverlay), for: .touchUpInside)
-    
-    self.view.addSubview(overlayView)
   }
   
   @objc func removeQuizStartOverlay() {
