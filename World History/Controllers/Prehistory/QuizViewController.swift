@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuizViewController: UIViewController, OverlayCapable {
+class QuizViewController: UIViewController {
   @IBOutlet weak var questionLabel: UILabel!
   @IBOutlet weak var progressBar: UIProgressView!
   @IBOutlet weak var choice1Button: UIButton!
@@ -20,7 +20,6 @@ class QuizViewController: UIViewController, OverlayCapable {
   var quizBrain = QuizBrain()
   var currentQuestion = 0
   var score = 0
-  private var startButton: UIButton?
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -39,18 +38,6 @@ class QuizViewController: UIViewController, OverlayCapable {
     resultLabel.isHidden = true
     loadNextQuestion()
     addQuizStartOverlay()
-    
-    startButton?.addTarget(self, action: #selector(removeQuizStartOverlay), for: .touchUpInside)
-  }
-  
-  @objc func removeQuizStartOverlay() {
-    if let overlayView = self.view.viewWithTag(999) {
-      UIView.animate(withDuration: 0.3, animations: {
-        overlayView.alpha = 0
-      }) { _ in
-        overlayView.removeFromSuperview()
-      }
-    }
   }
   
   @IBAction func quizButtonPressed(_ sender: UIButton) {
@@ -145,52 +132,52 @@ class QuizViewController: UIViewController, OverlayCapable {
   }
 }
 
-//extension UIViewController {
-//  func addQuizStartOverlay() {
-//    let overlayView = UIView()
-//    overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
-//    overlayView.tag = 999
-//    overlayView.translatesAutoresizingMaskIntoConstraints = false
-//    self.view.addSubview(overlayView)
-//    
-//    let tabBarHeight = self.tabBarController?.tabBar.frame.size.height ?? 0
-//    
-//    NSLayoutConstraint.activate([
-//      overlayView.topAnchor.constraint(equalTo: self.view.topAnchor),
-//      overlayView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-//      overlayView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-//      overlayView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: tabBarHeight)
-//    ])
-//    
-//    let startButton = UIButton(type: .system)
-//    startButton.setTitle("Start Quiz", for: .normal)
-//    startButton.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 22)
-//    startButton.backgroundColor = UIColor(named: "BackgroundColor2")
-//    startButton.setTitleColor(UIColor(named: "TextColor"), for: .normal)
-//    startButton.layer.borderWidth = 3
-//    startButton.layer.borderColor = UIColor(named: "TextColor")?.cgColor
-//    startButton.layer.cornerRadius = 10
-//    startButton.clipsToBounds = true
-//    startButton.translatesAutoresizingMaskIntoConstraints = false
-//    overlayView.addSubview(startButton)
-//    
-//    NSLayoutConstraint.activate([
-//      startButton.centerXAnchor.constraint(equalTo: overlayView.centerXAnchor),
-//      startButton.centerYAnchor.constraint(equalTo: overlayView.centerYAnchor),
-//      startButton.widthAnchor.constraint(equalToConstant: 200),
-//      startButton.heightAnchor.constraint(equalToConstant: 50)
-//    ])
-//    
-//    startButton.addTarget(self, action: #selector(removeQuizStartOverlay), for: .touchUpInside)
-//  }
-//  
-//  @objc func removeQuizStartOverlay() {
-//    if let overlayView = self.view.viewWithTag(999) {
-//      UIView.animate(withDuration: 0.3, animations: {
-//        overlayView.alpha = 0
-//      }) { _ in
-//        overlayView.removeFromSuperview()
-//      }
-//    }
-//  }
-//}
+extension UIViewController {
+  func addQuizStartOverlay() {
+    let overlayView = UIView()
+    overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+    overlayView.tag = 999
+    overlayView.translatesAutoresizingMaskIntoConstraints = false
+    self.view.addSubview(overlayView)
+    
+    let tabBarHeight = self.tabBarController?.tabBar.frame.size.height ?? 0
+    
+    NSLayoutConstraint.activate([
+      overlayView.topAnchor.constraint(equalTo: self.view.topAnchor),
+      overlayView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+      overlayView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+      overlayView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: tabBarHeight)
+    ])
+    
+    let startButton = UIButton(type: .system)
+    startButton.setTitle("Start Quiz", for: .normal)
+    startButton.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 22)
+    startButton.backgroundColor = UIColor(named: "BackgroundColor2")
+    startButton.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+    startButton.layer.borderWidth = 3
+    startButton.layer.borderColor = UIColor(named: "TextColor")?.cgColor
+    startButton.layer.cornerRadius = 10
+    startButton.clipsToBounds = true
+    startButton.translatesAutoresizingMaskIntoConstraints = false
+    overlayView.addSubview(startButton)
+    
+    NSLayoutConstraint.activate([
+      startButton.centerXAnchor.constraint(equalTo: overlayView.centerXAnchor),
+      startButton.centerYAnchor.constraint(equalTo: overlayView.centerYAnchor),
+      startButton.widthAnchor.constraint(equalToConstant: 200),
+      startButton.heightAnchor.constraint(equalToConstant: 50)
+    ])
+    
+    startButton.addTarget(self, action: #selector(removeQuizStartOverlay), for: .touchUpInside)
+  }
+  
+  @objc func removeQuizStartOverlay() {
+    if let overlayView = self.view.viewWithTag(999) {
+      UIView.animate(withDuration: 0.3, animations: {
+        overlayView.alpha = 0
+      }) { _ in
+        overlayView.removeFromSuperview()
+      }
+    }
+  }
+}

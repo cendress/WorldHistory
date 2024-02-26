@@ -47,7 +47,6 @@
 		9D6BF0FF2A20F6E200FA160E /* AncientQuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0FE2A20F6E200FA160E /* AncientQuizBrain.swift */; };
 		9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF1002A20F8D900FA160E /* AncientQuizViewController.swift */; };
 		9D6BF1042A20FFA600FA160E /* PostClassicalTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF1032A20FFA600FA160E /* PostClassicalTabController.swift */; };
-		9D7CEC172B8D489500563A22 /* OverlayCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CEC162B8D489500563A22 /* OverlayCapable.swift */; };
 		9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB966D22AD319200067F269 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +93,6 @@
 		9D6BF0FE2A20F6E200FA160E /* AncientQuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientQuizBrain.swift; sourceTree = "<group>"; };
 		9D6BF1002A20F8D900FA160E /* AncientQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientQuizViewController.swift; sourceTree = "<group>"; };
 		9D6BF1032A20FFA600FA160E /* PostClassicalTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClassicalTabController.swift; sourceTree = "<group>"; };
-		9D7CEC162B8D489500563A22 /* OverlayCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCapable.swift; sourceTree = "<group>"; };
 		9DB966D22AD319200067F269 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,7 +288,6 @@
 		9D7CEC152B8D485A00563A22 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9D7CEC162B8D489500563A22 /* OverlayCapable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -402,7 +399,6 @@
 				9D6BF0F92A20F2D300FA160E /* AncientVocabularyTableViewController.swift in Sources */,
 				9D10BC072A239276000B653E /* ContemporaryQuizViewController.swift in Sources */,
 				9D10BC032A2391E0000B653E /* ContemporaryReadViewController.swift in Sources */,
-				9D7CEC172B8D489500563A22 /* OverlayCapable.swift in Sources */,
 				9D162D3C2A1D49130023A80D /* DefinitionViewController.swift in Sources */,
 				9D10BBEE2A2240D7000B653E /* ModernReadingText.swift in Sources */,
 			);
