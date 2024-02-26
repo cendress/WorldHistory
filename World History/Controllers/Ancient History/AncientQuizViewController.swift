@@ -34,7 +34,8 @@ class AncientQuizViewController: UIViewController {
   }
   
   func loadNextQuestion() {
-    scoreLabel.text = "Score: \(score)"
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(ancientQuizBrain.questions.count)"
     let question = ancientQuizBrain.questions[currentQuestion]
     questionLabel.text = question.text
     
@@ -69,7 +70,8 @@ class AncientQuizViewController: UIViewController {
   }
   
   func updateQuiz() {
-    scoreLabel.text = "Score: \(score)"
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(ancientQuizBrain.questions.count)"
     currentQuestion += 1
     
     if currentQuestion < ancientQuizBrain.questions.count {
