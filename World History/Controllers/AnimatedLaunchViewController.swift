@@ -22,7 +22,7 @@ class AnimatedLaunchViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    UIView.animate(withDuration: 1.5, animations: {
+    UIView.animate(withDuration: 1.0, animations: {
       self.appLogoImage.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
     }, completion: { [weak self] finished in
       self?.startLabelAnimation()
@@ -30,7 +30,7 @@ class AnimatedLaunchViewController: UIViewController {
   }
   
   func startLabelAnimation() {
-    labelTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
+    labelTimer = Timer.scheduledTimer(withTimeInterval: 0.075, repeats: true) { [weak self] timer in
       guard let self = self else { return }
       
       if self.currentLabelIndex < self.labelText.count {
