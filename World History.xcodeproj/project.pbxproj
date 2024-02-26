@@ -248,6 +248,7 @@
 				9D162D3A2A1D0B0C0023A80D /* Models */,
 				9D162D2D2A1CF2390023A80D /* Views */,
 				9D162D2C2A1CF2190023A80D /* Controllers */,
+				9D7CEC152B8D485A00563A22 /* Helpers */,
 				9D45A9B62A1BB2B9006524DA /* Info.plist */,
 			);
 			path = "World History";
@@ -282,6 +283,13 @@
 				9D10BBD52A2114E7000B653E /* PostClassicalQuizViewController.swift */,
 			);
 			path = PostClassical;
+			sourceTree = "<group>";
+		};
+		9D7CEC152B8D485A00563A22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
