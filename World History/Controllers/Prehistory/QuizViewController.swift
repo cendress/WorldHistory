@@ -34,7 +34,10 @@ class QuizViewController: UIViewController {
   }
   
   func loadNextQuestion() {
-    scoreLabel.text = "Score: \(score)"
+    // Change score label to show question number
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(quizBrain.questions.count)"
+    
     let question = quizBrain.questions[currentQuestion]
     questionLabel.text = question.text
     
@@ -68,7 +71,8 @@ class QuizViewController: UIViewController {
   }
   
   func updateQuiz() {
-    scoreLabel.text = "Score: \(score)"
+    let questionNumber = currentQuestion + 1
+    scoreLabel.text = "Question \(questionNumber)/\(quizBrain.questions.count)"
     currentQuestion += 1
     
     if currentQuestion < quizBrain.questions.count {
