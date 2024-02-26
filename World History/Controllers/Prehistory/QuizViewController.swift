@@ -21,6 +21,14 @@ class QuizViewController: UIViewController {
   var currentQuestion = 0
   var score = 0
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    if view.viewWithTag(999) == nil {
+      addQuizStartOverlay()
+    }
+    
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     styleButtons()
@@ -120,4 +128,44 @@ class QuizViewController: UIViewController {
   }
 }
 
-
+extension UIViewController {
+  func addQuizStartOverlay() {
+    let overlayView = UIView(frame: self.view.bounds)
+    overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+    overlayView.tag = 999
+    
+    let startButton = UIButton(type: .system)
+    startButton.setTitle("Start Quiz", for: .normal)
+    startButton.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 22)
+    startButton.backgroundColor = UIColor(named: "BackgroundColor2")
+    startButton.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+    startButton.layer.borderWidth = 1
+    startButton.layer.borderColor = UIColor(named: "TextColor")?.cgColor
+    startButton.layer.cornerRadius = 10
+    startButton.clipsToBounds = true
+    
+    startButton.translatesAutoresizingMaskIntoConstraints = false
+    overlayView.addSubview(startButton)
+    
+    NSLayoutConstraint.activate([
+      startButton.centerXAnchor.constraint(equalTo: overlayView.centerXAnchor),
+      startButton.centerYAnchor.constraint(equalTo: overlayView.centerYAnchor),
+      startButton.widthAnchor.constraint(equalToConstant: 200),
+      startButton.heightAnchor.constraint(equalToConstant: 50)
+    ])
+    
+    startButton.addTarget(self, action: #selector(removeQuizStartOverlay), for: .touchUpInside)
+    
+    self.view.addSubview(overlayView)
+  }
+  
+  @objc func removeQuizStartOverlay() {
+    if let overlayView = self.view.viewWithTag(999) {
+      UIView.animate(withDuration: 0.3, animations: {
+        overlayView.alpha = 0
+      }) { _ in
+        overlayView.removeFromSuperview()
+      }
+    }
+  }
+}
