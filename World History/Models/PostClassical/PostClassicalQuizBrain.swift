@@ -32,7 +32,7 @@ struct PostClassicalQuizBrain {
     Question(text: "What period followed the Late Middle Ages, marking the start of the modern age?", answers: ["The Renaissance and the Age of Exploration", "The Age of Enlightenment", "The Industrial Revolution", "The Roman Era"], correctAnswer: "The Renaissance and the Age of Exploration"),
     Question(text: "Which family controlled politics during much of the Italian Renaissance?", answers: ["The Medici Family", "The Borgia Family", "The Pazzi Family", "The Sforza Family"], correctAnswer: "The Medici Family"),
     Question(text: "Who was the explorer that first circumnavigated the globe, proving that the Earth is round?", answers: ["Christopher Columbus", "Ferdinand Magellan", "Marco Polo", "Vasco da Gama"], correctAnswer: "Ferdinand Magellan"),
-    Question(text: "Who was the famous Renaissance artist known for works such as the 'Mona Lisa' and 'The Last Supper'?", answers: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], correctAnswer: "Leonardo da Vinci")
+//    Question(text: "Who was the famous Renaissance artist known for works such as the 'Mona Lisa' and 'The Last Supper'?", answers: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], correctAnswer: "Leonardo da Vinci")
   ]
   
   init() {
