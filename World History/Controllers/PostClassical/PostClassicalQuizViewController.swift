@@ -73,12 +73,19 @@ class PostClassicalQuizViewController: UIViewController {
   }
   
   func showResult(correct: Bool) {
-    resultLabel.isHidden = false
-    resultLabel.text = correct ? "Correct!" : "Incorrect!"
-    resultLabel.textColor = correct ? UIColor.green : UIColor.red
+    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+          let window = windowScene.windows.first(where: { $0.isKeyWindow }) else {
+      return
+    }
     
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-      self.resultLabel.isHidden = true
+    let resultView = UIView(frame: window.bounds)
+    resultView.backgroundColor = correct ? UIColor.green.withAlphaComponent(0.3) : UIColor.red.withAlphaComponent(0.3)
+    window.addSubview(resultView)
+    
+    UIView.animate(withDuration: 0.5, animations: {
+      resultView.alpha = 0
+    }) { _ in
+      resultView.removeFromSuperview()
     }
   }
   
