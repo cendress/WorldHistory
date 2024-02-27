@@ -2,9 +2,9 @@
 
 Globe: World History is an iOS application built with UIKit that offers users a comprehensive journey through various historical periods. Whether you're a student, educator, or history enthusiast, Globe: World History is a treasure trove to enrich your understanding of world history.
 
-![readImage](https://github.com/cendress/World-History/assets/95492688/5f0121bf-c9af-4f13-9603-5f224bc883d8)
-![learnImage](https://github.com/cendress/World-History/assets/95492688/3a2a2caf-218e-4bae-995b-15c92afb2145)
-![testImage](https://github.com/cendress/World-History/assets/95492688/220571b2-c199-4355-81e8-9c2a7f49a41d)
+![readImage](https://github.com/cendress/WorldHistory/assets/95492688/1c980134-0f25-4744-a6ef-1af3200478e2)
+![learnImage](https://github.com/cendress/WorldHistory/assets/95492688/27380ce0-de99-4a03-9f20-3726c88362e9)
+![testImage](https://github.com/cendress/WorldHistory/assets/95492688/bdea321a-12e2-4f56-b969-7a9ea4d6a992)
 
 ## 🚀 Features
 
