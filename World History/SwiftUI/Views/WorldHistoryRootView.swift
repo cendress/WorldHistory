@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-// MARK: - Model
-
-
-
 // MARK: - Shared State
 
 final class HistorySelection: ObservableObject {
@@ -25,119 +21,28 @@ struct WorldHistoryRootView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                ReadingScreen()
+                ReadingView()
             }
             .tabItem {
                 Label("Reading", systemImage: "book")
             }
 
             NavigationStack {
-                VocabularyScreen()
+                GlossaryView()
             }
             .tabItem {
                 Label("Vocabulary", systemImage: "text.book.closed")
             }
 
             NavigationStack {
-                QuizScreen()
+                QuizView()
             }
             .tabItem {
                 Label("Quiz", systemImage: "questionmark.circle")
             }
         }
+        .tint(Color("BackgroundColor2"))
         .environmentObject(historySelection)
-    }
-}
-
-// MARK: - Period Menu (Right Bar Button)
-
-struct PeriodToolbarMenu: View {
-    @EnvironmentObject var historySelection: HistorySelection
-
-    var body: some View {
-        Menu {
-            ForEach(HistoryPeriod.allCases) { period in
-                Button {
-                    historySelection.selectedPeriod = period
-                } label: {
-                    HStack {
-                        Text(period.displayName)
-                        if period == historySelection.selectedPeriod {
-                            Spacer()
-                            Image(systemName: "checkmark")
-                        }
-                    }
-                }
-            }
-        } label: {
-            HStack(spacing: 4) {
-                Text(historySelection.selectedPeriod.shortTitle)
-                    .font(.subheadline)
-                Image(systemName: "chevron.down")
-                    .font(.caption)
-            }
-        }
-    }
-}
-
-// MARK: - Screens (Scaffolding Only for Now)
-
-struct ReadingScreen: View {
-    @EnvironmentObject var historySelection: HistorySelection
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                // Step 2: plug your actual reading text here
-                Text("Reading content for \(historySelection.selectedPeriod.displayName)")
-                    .font(.body)
-                    .foregroundColor(.primary)
-            }
-            .padding()
-        }
-        .navigationTitle("Reading")
-        .navigationBarTitleDisplayMode(.large)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                PeriodToolbarMenu()
-            }
-        }
-    }
-}
-
-struct VocabularyScreen: View {
-    @EnvironmentObject var historySelection: HistorySelection
-
-    var body: some View {
-        // Step 2: we’ll replace this with the styled list + chevron toggles
-        Text("Vocabulary for \(historySelection.selectedPeriod.displayName)")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(.systemBackground))
-            .navigationTitle("Vocabulary")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    PeriodToolbarMenu()
-                }
-            }
-    }
-}
-
-struct QuizScreen: View {
-    @EnvironmentObject var historySelection: HistorySelection
-
-    var body: some View {
-        // Step 2: quiz UI scaffolding will go here
-        Text("Quiz for \(historySelection.selectedPeriod.displayName)")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(.systemBackground))
-            .navigationTitle("Quiz")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    PeriodToolbarMenu()
-                }
-            }
     }
 }
 

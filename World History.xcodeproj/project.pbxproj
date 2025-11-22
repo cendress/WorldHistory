@@ -50,6 +50,10 @@
 		9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB966D22AD319200067F269 /* CustomAlertView.swift */; };
 		9DF863972ED2404900AB1FB8 /* WorldHistoryRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */; };
 		9DF8639B2ED240F900AB1FB8 /* HistoryPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */; };
+		9DF863A02ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */; };
+		9DF863A22ED249BF00AB1FB8 /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */; };
+		9DF863A42ED24A1E00AB1FB8 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */; };
+		9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +102,10 @@
 		9DB966D22AD319200067F269 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldHistoryRootView.swift; sourceTree = "<group>"; };
 		9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPeriod.swift; sourceTree = "<group>"; };
+		9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodToolbarMenuView.swift; sourceTree = "<group>"; };
+		9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
+		9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
+		9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +310,10 @@
 			isa = PBXGroup;
 			children = (
 				9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */,
+				9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */,
+				9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */,
+				9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */,
+				9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -388,6 +400,7 @@
 				9D10BBFE2A23913D000B653E /* ContemporaryQuizBrain.swift in Sources */,
 				9D6BF1042A20FFA600FA160E /* PostClassicalTabController.swift in Sources */,
 				9D6BF0FF2A20F6E200FA160E /* AncientQuizBrain.swift in Sources */,
+				9DF863A42ED24A1E00AB1FB8 /* GlossaryView.swift in Sources */,
 				9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */,
 				9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */,
 				9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */,
@@ -397,6 +410,7 @@
 				9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */,
 				9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */,
 				9D10BBD42A210C3D000B653E /* PostClassicalQuizBrain.swift in Sources */,
+				9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */,
 				9D10BBD02A2103A0000B653E /* PostClassicalReadViewController.swift in Sources */,
 				9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */,
 				9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */,
@@ -410,6 +424,7 @@
 				9D162D3E2A1E7ED70023A80D /* CustomTabBarController.swift in Sources */,
 				9D162D502A1FD3620023A80D /* AnimatedLaunchViewController.swift in Sources */,
 				9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */,
+				9DF863A02ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift in Sources */,
 				9D10BBF02A22415B000B653E /* ModernQuizBrain.swift in Sources */,
 				9D10BBCE2A210319000B653E /* PostClassicalReadingText.swift in Sources */,
 				9DF8639B2ED240F900AB1FB8 /* HistoryPeriod.swift in Sources */,
@@ -417,6 +432,7 @@
 				9D10BBD62A2114E7000B653E /* PostClassicalQuizViewController.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D10BBF32A2241E0000B653E /* ModernTabController.swift in Sources */,
+				9DF863A22ED249BF00AB1FB8 /* ReadingView.swift in Sources */,
 				9D162D422A1E8D3C0023A80D /* Question.swift in Sources */,
 				9D10BBF72A224297000B653E /* ModernVocabularyTableViewController.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
