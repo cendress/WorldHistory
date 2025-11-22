@@ -16,9 +16,10 @@ struct ReadingView: View {
                 .ignoresSafeArea()
             
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    // Step 2: plug your actual reading text here
-                }
+                    Text(ReadingContent.text(for: historySelection.selectedPeriod))
+                    .foregroundStyle(Color.primary)
+                    .multilineTextAlignment(.leading)
+                    .padding(.horizontal, 16)
             }
             .navigationTitle(historySelection.selectedPeriod.displayName)
             .toolbar {
