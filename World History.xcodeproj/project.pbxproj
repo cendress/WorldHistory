@@ -54,6 +54,7 @@
 		9DF863A22ED249BF00AB1FB8 /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */; };
 		9DF863A42ED24A1E00AB1FB8 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */; };
 		9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */; };
+		9DF8646A2ED2579D00AB1FB8 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF864692ED2579D00AB1FB8 /* Haptic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
 		9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		9DF864692ED2579D00AB1FB8 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 		9DF863952ED2402500AB1FB8 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9DF864682ED2579000AB1FB8 /* Utils */,
 				9DF863992ED240E700AB1FB8 /* Models */,
 				9DF863982ED2409800AB1FB8 /* Views */,
 			);
@@ -324,6 +327,14 @@
 				9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9DF864682ED2579000AB1FB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9DF864692ED2579D00AB1FB8 /* Haptic.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +429,7 @@
 				9D10BC052A239205000B653E /* ContemporaryVocabularyTableViewController.swift in Sources */,
 				9D162D372A1CF3E90023A80D /* QuizViewController.swift in Sources */,
 				9D10BBFC2A23911E000B653E /* ContemporaryReadingText.swift in Sources */,
+				9DF8646A2ED2579D00AB1FB8 /* Haptic.swift in Sources */,
 				9D162D392A1D09CF0023A80D /* ReadingText.swift in Sources */,
 				9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */,
 				9D10BBF52A22425C000B653E /* ModernReadViewController.swift in Sources */,
