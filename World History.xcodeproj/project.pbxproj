@@ -55,6 +55,7 @@
 		9DF863A42ED24A1E00AB1FB8 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */; };
 		9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */; };
 		9DF8646A2ED2579D00AB1FB8 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF864692ED2579D00AB1FB8 /* Haptic.swift */; };
+		9DF8646C2ED2603700AB1FB8 /* ReadingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		9DF864692ED2579D00AB1FB8 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */,
+				9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				9D10BBD22A210774000B653E /* PostClassicalVocabularyTableViewController.swift in Sources */,
 				9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */,
 				9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */,
+				9DF8646C2ED2603700AB1FB8 /* ReadingContent.swift in Sources */,
 				9D10BBD42A210C3D000B653E /* PostClassicalQuizBrain.swift in Sources */,
 				9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */,
 				9D10BBD02A2103A0000B653E /* PostClassicalReadViewController.swift in Sources */,
