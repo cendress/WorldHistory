@@ -56,6 +56,7 @@
 		9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */; };
 		9DF8646A2ED2579D00AB1FB8 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF864692ED2579D00AB1FB8 /* Haptic.swift */; };
 		9DF8646C2ED2603700AB1FB8 /* ReadingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */; };
+		9DF8646E2ED262AC00AB1FB8 /* GlossaryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8646D2ED262AC00AB1FB8 /* GlossaryContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		9DF864692ED2579D00AB1FB8 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingContent.swift; sourceTree = "<group>"; };
+		9DF8646D2ED262AC00AB1FB8 /* GlossaryContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 			children = (
 				9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */,
 				9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */,
+				9DF8646D2ED262AC00AB1FB8 /* GlossaryContent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				9D6BF0FF2A20F6E200FA160E /* AncientQuizBrain.swift in Sources */,
 				9DF863A42ED24A1E00AB1FB8 /* GlossaryView.swift in Sources */,
 				9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */,
+				9DF8646E2ED262AC00AB1FB8 /* GlossaryContent.swift in Sources */,
 				9D45A9A62A1BB2B8006524DA /* AppDelegate.swift in Sources */,
 				9D162D352A1CF3C00023A80D /* VocabularyTableViewController.swift in Sources */,
 				9D162D4A2A1FBF870023A80D /* VocabularyTerm.swift in Sources */,
