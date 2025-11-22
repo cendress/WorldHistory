@@ -11,14 +11,18 @@ struct GlossaryView: View {
     @EnvironmentObject var historySelection: HistorySelection
     
     var body: some View {
-        VStack {
+        ZStack {
+            Color("BackgroundColor")
+                .ignoresSafeArea()
             
-        }
-        .navigationTitle("Glossary")
-        .navigationBarTitleDisplayMode(.large)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                PeriodToolbarMenuView()
+            VStack {
+                
+            }
+            .navigationTitle("Glossary")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    PeriodToolbarMenuView()
+                }
             }
         }
     }

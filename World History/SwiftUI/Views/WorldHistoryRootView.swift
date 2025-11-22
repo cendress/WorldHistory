@@ -38,7 +38,7 @@ struct WorldHistoryRootView: View {
                 Button(action: {
                     Haptic.selection()
                 }) {
-                    Label("Vocabulary", systemImage: "text.book.closed")
+                    Label("Glossary", systemImage: "text.book.closed")
                 }
             }
             

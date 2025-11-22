@@ -11,20 +11,20 @@ struct ReadingView: View {
     @EnvironmentObject var historySelection: HistorySelection
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                // Step 2: plug your actual reading text here
-                Text("")
-                    .font(.body)
-                    .foregroundColor(.primary)
+        ZStack {
+            Color("BackgroundColor")
+                .ignoresSafeArea()
+            
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    // Step 2: plug your actual reading text here
+                }
             }
-            .padding()
-        }
-        .navigationTitle(historySelection.selectedPeriod.displayName)
-        .navigationBarTitleDisplayMode(.large)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                PeriodToolbarMenuView()
+            .navigationTitle(historySelection.selectedPeriod.displayName)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    PeriodToolbarMenuView()
+                }
             }
         }
     }
