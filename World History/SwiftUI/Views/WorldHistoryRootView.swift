@@ -17,28 +17,40 @@ final class HistorySelection: ObservableObject {
 
 struct WorldHistoryRootView: View {
     @StateObject private var historySelection = HistorySelection()
-
+    
     var body: some View {
         TabView {
             NavigationStack {
                 ReadingView()
             }
             .tabItem {
-                Label("Reading", systemImage: "book")
+                Button(action: {
+                    Haptic.selection()
+                }) {
+                    Label("Reading", systemImage: "book")
+                }
             }
-
+            
             NavigationStack {
                 GlossaryView()
             }
             .tabItem {
-                Label("Vocabulary", systemImage: "text.book.closed")
+                Button(action: {
+                    Haptic.selection()
+                }) {
+                    Label("Vocabulary", systemImage: "text.book.closed")
+                }
             }
-
+            
             NavigationStack {
                 QuizView()
             }
             .tabItem {
-                Label("Quiz", systemImage: "questionmark.circle")
+                Button(action: {
+                    Haptic.selection()
+                }) {
+                    Label("Quiz", systemImage: "questionmark.circle")
+                }
             }
         }
         .tint(Color("BackgroundColor2"))

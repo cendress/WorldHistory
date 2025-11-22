@@ -13,22 +13,26 @@ struct PeriodToolbarMenuView: View {
     var body: some View {
         Menu {
             ForEach(HistoryPeriod.allCases) { period in
-                Button {
+                Button(action: {
+                    Haptic.selection()
                     historySelection.selectedPeriod = period
-                } label: {
+                }) {
                     HStack {
                         Text(period.displayName)
+                        
                         if period == historySelection.selectedPeriod {
                             Spacer()
+                            
                             Image(systemName: "checkmark")
                         }
                     }
                 }
             }
         } label: {
-            HStack(spacing: 4) {
+            HStack {
                 Text(historySelection.selectedPeriod.shortTitle)
                     .font(.subheadline)
+                
                 Image(systemName: "chevron.down")
                     .font(.caption)
             }
