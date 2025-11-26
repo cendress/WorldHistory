@@ -17,7 +17,7 @@ struct ReadingView: View {
             
             ScrollView {
                     Text(ReadingContent.text(for: historySelection.selectedPeriod))
-                    .foregroundStyle(Color.primary)
+                    .foregroundStyle(Color("TextColor"))
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 16)
             }

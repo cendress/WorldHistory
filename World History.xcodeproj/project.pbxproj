@@ -39,6 +39,7 @@
 		9D45A9AA2A1BB2B8006524DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A9A92A1BB2B8006524DA /* HomeViewController.swift */; };
 		9D45A9AD2A1BB2B8006524DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9AB2A1BB2B8006524DA /* Main.storyboard */; };
 		9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9B12A1BB2B9006524DA /* Assets.xcassets */; };
+		9D6005862ED79C0800B9DF8B /* GlossaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */; };
 		9D69DF8F2AB617BC002E4CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */; };
 		9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */; };
 		9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */; };
@@ -94,6 +95,7 @@
 		9D45A9AC2A1BB2B8006524DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D45A9B12A1BB2B9006524DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D45A9B62A1BB2B9006524DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryRowView.swift; sourceTree = "<group>"; };
 		9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
 		9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,15 @@
 			path = "World History";
 			sourceTree = "<group>";
 		};
+		9D6005872ED79E5700B9DF8B /* Glossary */ = {
+			isa = PBXGroup;
+			children = (
+				9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */,
+				9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */,
+			);
+			path = Glossary;
+			sourceTree = "<group>";
+		};
 		9D6BF0F02A1FE8F900FA160E /* Ancient History */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,7 +330,7 @@
 				9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */,
 				9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */,
 				9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */,
-				9DF863A32ED24A1E00AB1FB8 /* GlossaryView.swift */,
+				9D6005872ED79E5700B9DF8B /* Glossary */,
 				9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */,
 			);
 			path = Views;
@@ -453,6 +464,7 @@
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D10BBF32A2241E0000B653E /* ModernTabController.swift in Sources */,
 				9DF863A22ED249BF00AB1FB8 /* ReadingView.swift in Sources */,
+				9D6005862ED79C0800B9DF8B /* GlossaryRowView.swift in Sources */,
 				9D162D422A1E8D3C0023A80D /* Question.swift in Sources */,
 				9D10BBF72A224297000B653E /* ModernVocabularyTableViewController.swift in Sources */,
 				9D162D332A1CF2E10023A80D /* ReadViewController.swift in Sources */,
