@@ -52,7 +52,7 @@ struct QuizRowChoiceView: View {
                     .foregroundStyle(Color("TextColor"))
             }
         }
-        .padding(.vertical, 16)
+        .padding(.vertical, 14)
         .padding(.horizontal, 12)
         .background(
             RoundedRectangle(cornerRadius: 16)

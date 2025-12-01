@@ -27,6 +27,7 @@ struct QuizView: View {
             Color("BackgroundColor")
                 .ignoresSafeArea()
             
+            ScrollView {
             Group {
                 if showResults {
                     QuizResultsView(
@@ -78,6 +79,7 @@ struct QuizView: View {
             .onChange(of: historySelection.selectedPeriod) { newValue in
                 loadQuestions(for: newValue)
             }
+        }
         }
     }
 
