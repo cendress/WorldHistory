@@ -64,6 +64,10 @@ struct QuizRowChoiceView: View {
         )
         .shadow(color: Color.black.opacity(0.06), radius: 3, x: 0, y: 2)
         .contentShape(Rectangle())
+        .animation(.easeInOut(duration: 0.15),
+                   value: isSelected)
+        .animation(.easeInOut(duration: 0.15),
+                   value: showFeedback)
     }
 }
 

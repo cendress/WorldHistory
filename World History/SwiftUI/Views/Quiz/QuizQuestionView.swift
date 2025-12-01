@@ -33,6 +33,8 @@ struct QuizQuestionView: View {
                             value: Double(currentIndex + (isAnswered ? 1 : 0)),
                             total: Double(totalQuestions)
                         )
+                        .animation(.easeInOut(duration: 0.25),
+                                   value: currentIndex + (isAnswered ? 1 : 0))
                     }
                 }
 
@@ -106,6 +108,8 @@ struct QuizQuestionView: View {
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(Color("TextColor"), lineWidth: 1)
                     )
+                    .animation(.easeInOut(duration: 0.2),
+                               value: selectedIndex == nil && !isAnswered)
 
                     if hasQuestions {
                         Button(role: .destructive, action: {

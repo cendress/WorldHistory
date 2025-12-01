@@ -110,10 +110,12 @@ struct QuizView: View {
 
         if !isAnswered {
             // First tap: grade the answer
-            isAnswered = true
-            if let selectedIndex = selectedIndex,
-               selectedIndex == question.correctIndex {
-                score += 1
+            withAnimation(.easeInOut(duration: 0.25)) {
+                isAnswered = true
+                if let selectedIndex = selectedIndex,
+                   selectedIndex == question.correctIndex {
+                    score += 1
+                }
             }
         } else {
             // Second tap: move to next question or show results
