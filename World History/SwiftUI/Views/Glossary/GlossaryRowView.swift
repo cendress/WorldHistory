@@ -34,11 +34,11 @@ struct GlossaryRowView: View {
         }
         .padding(18)
         .background(
-            RoundedRectangle(cornerRadius: 32)
+            RoundedRectangle(cornerRadius: 16)
                 .fill(Color("BackgroundColor2"))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 32, style: .continuous)
+            RoundedRectangle(cornerRadius: 16)
                 .stroke(Color("TextColor"), lineWidth: 1)
         )
         .shadow(color: Color.black.opacity(0.10), radius: 4, x: 0, y: 2)

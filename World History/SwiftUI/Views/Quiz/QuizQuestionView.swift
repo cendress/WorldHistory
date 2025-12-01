@@ -22,13 +22,7 @@ struct QuizQuestionView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 24) {
-
-                // Period label
-                Text(periodName)
-                    .font(.subheadline.weight(.medium))
-                    .foregroundColor(.secondary)
-
+            VStack(spacing: 32) {
                 // Progress
                 if hasQuestions {
                     VStack(alignment: .leading, spacing: 8) {
@@ -47,7 +41,7 @@ struct QuizQuestionView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text(question.prompt)
                         .font(.headline)
-                        .foregroundColor(.primary)
+                        .foregroundStyle(Color("TextColor"))
 
                     VStack(spacing: 8) {
                         ForEach(question.choices.indices, id: \.self) { index in
@@ -61,6 +55,7 @@ struct QuizQuestionView: View {
                                 showFeedback: isAnswered
                             )
                             .onTapGesture {
+                                Haptic.selection()
                                 onSelectChoice(index)
                             }
                         }
@@ -68,8 +63,8 @@ struct QuizQuestionView: View {
                 }
                 .padding(16)
                 .background(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(Color(.systemBackground))
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(Color("BackgroundColor2"))
                 )
                 .shadow(color: Color.black.opacity(0.08), radius: 6, x: 0, y: 3)
 
@@ -80,35 +75,42 @@ struct QuizQuestionView: View {
                             .font(.subheadline.weight(.semibold))
                         Text(explanation)
                             .font(.subheadline)
-                            .foregroundColor(.secondary)
                     }
+                    .foregroundStyle(Color("TextColor"))
                     .transition(.opacity)
                 }
+                
+                Spacer()
 
                 // Buttons
-                VStack(spacing: 12) {
-                    Button(action: onSubmit) {
+                VStack(spacing: 16) {
+                    Button(action: {
+                        Haptic.light()
+                        onSubmit()
+                    }) {
                         Text(isAnswered ? "Next Question" : "Submit Answer")
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(isAnswered ? Color.blue.opacity(0.85) : Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(12)
+                            .background(isAnswered ? Color("BackgroundColor2").opacity(0.85) : Color("BackgroundColor2"))
+                            .foregroundStyle(Color("TextColor"))
+                            .cornerRadius(16)
                     }
                     .disabled(selectedIndex == nil && !isAnswered)
                     .opacity((selectedIndex == nil && !isAnswered) ? 0.5 : 1.0)
 
                     if hasQuestions {
-                        Button(role: .destructive, action: onRestart) {
+                        Button(role: .destructive, action: {
+                            Haptic.medium()
+                            onRestart()
+                        }) {
                             Text("Restart Quiz")
                                 .font(.subheadline)
                         }
                     }
                 }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
+            .frame(maxWidth: .infinity)
         }
     }
 }

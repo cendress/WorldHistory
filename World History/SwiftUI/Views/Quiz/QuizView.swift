@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// MARK: - Top-Level Quiz Container
-
 struct QuizView: View {
     @EnvironmentObject var historySelection: HistorySelection
 
@@ -25,55 +23,60 @@ struct QuizView: View {
     }
 
     var body: some View {
-        Group {
-            if showResults {
-                QuizResultsView(
-                    periodName: historySelection.selectedPeriod.displayName,
-                    score: score,
-                    totalQuestions: questions.count,
-                    onRetake: {
-                        withAnimation {
-                            resetQuiz()
+        ZStack {
+            Color("BackgroundColor")
+                .ignoresSafeArea()
+            
+            Group {
+                if showResults {
+                    QuizResultsView(
+                        periodName: historySelection.selectedPeriod.displayName,
+                        score: score,
+                        totalQuestions: questions.count,
+                        onRetake: {
+                            withAnimation {
+                                resetQuiz()
+                            }
                         }
-                    }
-                )
-            } else if let question = currentQuestion {
-                QuizQuestionView(
-                    periodName: historySelection.selectedPeriod.displayName,
-                    question: question,
-                    currentIndex: currentIndex,
-                    totalQuestions: questions.count,
-                    selectedIndex: selectedIndex,
-                    isAnswered: isAnswered,
-                    hasQuestions: !questions.isEmpty,
-                    onSelectChoice: { index in
-                        guard !isAnswered else { return }
-                        selectedIndex = index
-                    },
-                    onSubmit: {
-                        submitAnswer()
-                    },
-                    onRestart: {
-                        withAnimation {
-                            resetQuiz()
+                    )
+                } else if let question = currentQuestion {
+                    QuizQuestionView(
+                        periodName: historySelection.selectedPeriod.displayName,
+                        question: question,
+                        currentIndex: currentIndex,
+                        totalQuestions: questions.count,
+                        selectedIndex: selectedIndex,
+                        isAnswered: isAnswered,
+                        hasQuestions: !questions.isEmpty,
+                        onSelectChoice: { index in
+                            guard !isAnswered else { return }
+                            selectedIndex = index
+                        },
+                        onSubmit: {
+                            submitAnswer()
+                        },
+                        onRestart: {
+                            withAnimation {
+                                resetQuiz()
+                            }
                         }
-                    }
-                )
-            } else {
-                EmptyQuizView(periodName: historySelection.selectedPeriod.displayName)
+                    )
+                } else {
+                    EmptyQuizView(periodName: historySelection.selectedPeriod.displayName)
+                }
             }
-        }
-        .navigationTitle("Quiz")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                PeriodToolbarMenuView()
+            .navigationTitle("Quiz")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    PeriodToolbarMenuView()
+                }
             }
-        }
-        .onAppear {
-            loadQuestions(for: historySelection.selectedPeriod)
-        }
-        .onChange(of: historySelection.selectedPeriod) { newValue in
-            loadQuestions(for: newValue)
+            .onAppear {
+                loadQuestions(for: historySelection.selectedPeriod)
+            }
+            .onChange(of: historySelection.selectedPeriod) { newValue in
+                loadQuestions(for: newValue)
+            }
         }
     }
 
