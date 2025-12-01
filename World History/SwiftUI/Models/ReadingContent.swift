@@ -10,6 +10,9 @@ import Foundation
 enum ReadingContent {
     static func text(for period: HistoryPeriod) -> String {
         switch period {
+            
+            //MARK: - Prehistory
+            
         case .prehistory:
             return
                 """
@@ -53,6 +56,9 @@ enum ReadingContent {
                 
                 As we conclude our journey through prehistory, we stand at the threshold of recorded history, looking ahead to the rise of the great civilizations of the ancient world. From the first tool-making hominins of the Paleolithic, through the artistic and spiritual expressions of Ice Age hunters, the experiments of early farmers, the growth of villages and cities, and the breakthroughs of metallurgy and writing, the story of prehistory is not a simple tale of steady, linear progress. Instead, it is a complex, global mosaic of different societies, each responding in its own way to the opportunities and constraints of its environment. What unites these many threads is a shared human capacity for creativity, cooperation, and resilience. Understanding this deep past helps us see that the roots of our modern world stretch far beyond any single region, culture, or tradition, and that the story of humanity has always been diverse, interconnected, and evolving.
                 """
+            
+            //MARK: - Ancient History
+            
         case .ancientHistory:
             return
                 """
@@ -96,6 +102,9 @@ enum ReadingContent {
 
                 As our journey through ancient history concludes, it becomes clear that these civilizations—diverse in language, belief, and geography—have left an indelible mark on humanity. Their innovations in writing, law, religion, philosophy, science, and art have shaped the institutions and ideas that structure many societies today. At the same time, ancient history is not simply a story of unbroken progress; it includes periods of crisis, collapse, and transformation that remind us of the fragility of human achievements. By studying the ancient world, we gain a deeper appreciation for the creativity and resilience of past societies and for the global interconnectedness that has long characterized human experience. Ancient history remains not only a subject of scholarly study, but also a living source of stories, symbols, and lessons that continue to inform how we understand ourselves and our shared future.
                 """
+            
+            //MARK: - Post-Classical Era
+            
         case .postClassicalEra:
             return
                 """
@@ -141,6 +150,9 @@ enum ReadingContent {
 
                 The Late Middle Ages, then, can be understood as an era of both crisis and creativity, disruption and adaptation. Famine, plague, and war challenged existing institutions, yet also opened space for social, economic, and intellectual change. New forms of political authority and identity began to emerge, as did new artistic and literary expressions that explored the depths of human experience. Across Africa, Europe, Asia, and the Americas, societies were confronting environmental pressures, technological changes, and shifting trade patterns in their own distinct ways. As this period drew to a close, the post-classical world was gradually giving way to what we often call the “early modern” era—marked by the Renaissance, the rise of powerful centralized states and empires such as the Ottoman Empire, Safavid Persia, and Mughal India, and the beginning of global oceanic exploration. Together, these changes set the stage for a new chapter in world history, one that would be profoundly interconnected, sometimes exploitative, and endlessly transformative.
                 """
+            
+            //MARK: - Modern History
+            
         case .modern:
             return
                 """
@@ -184,6 +196,9 @@ enum ReadingContent {
                 
                 The Modern Period was thus an era of dramatic and often contradictory change—of scientific breakthroughs and industrial growth, but also of conquest, dispossession, and war; of powerful new ideas about rights and democracy, alongside systems of racial inequality, patriarchy, and imperial rule. Its legacies are visible in today’s political borders, economic systems, social movements, and cultural expressions. By viewing this period from a global and balanced perspective—acknowledging contributions from Europe, the Islamic world, Africa, the Americas, and Asia alike—we gain a deeper understanding of how interconnected our histories have always been. The Modern Period laid much of the groundwork for the contemporary world, and its unresolved questions about power, justice, and human dignity continue to shape our shared future.
                 """
+            
+            //MARK: - Contemporary History
+            
         case .contemporary:
             return
                 """

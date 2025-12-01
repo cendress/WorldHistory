@@ -192,7 +192,7 @@ enum GlossaryContent {
                 )
             ]
             
-            // MARK: - Modern
+            // MARK: - Modern History
             
         case .modern:
             return [
@@ -258,7 +258,7 @@ enum GlossaryContent {
                 )
             ]
             
-            // MARK: - Contemporary
+            // MARK: - Contemporary History
             
         case .contemporary:
             return [

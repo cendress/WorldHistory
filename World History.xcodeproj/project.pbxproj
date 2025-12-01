@@ -40,6 +40,7 @@
 		9D45A9AD2A1BB2B8006524DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9AB2A1BB2B8006524DA /* Main.storyboard */; };
 		9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9B12A1BB2B9006524DA /* Assets.xcassets */; };
 		9D6005862ED79C0800B9DF8B /* GlossaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */; };
+		9D6009C82EDE1BA300B9DF8B /* QuizContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009C72EDE1BA300B9DF8B /* QuizContent.swift */; };
 		9D69DF8F2AB617BC002E4CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */; };
 		9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */; };
 		9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */; };
@@ -96,6 +97,7 @@
 		9D45A9B12A1BB2B9006524DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D45A9B62A1BB2B9006524DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryRowView.swift; sourceTree = "<group>"; };
+		9D6009C72EDE1BA300B9DF8B /* QuizContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContent.swift; sourceTree = "<group>"; };
 		9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
 		9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 				9DF8639A2ED240F900AB1FB8 /* HistoryPeriod.swift */,
 				9DF8646B2ED2603700AB1FB8 /* ReadingContent.swift */,
 				9DF8646D2ED262AC00AB1FB8 /* GlossaryContent.swift */,
+				9D6009C72EDE1BA300B9DF8B /* QuizContent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				9DF8639B2ED240F900AB1FB8 /* HistoryPeriod.swift in Sources */,
 				9D10BC012A2391C2000B653E /* ContemporaryTabController.swift in Sources */,
 				9D10BBD62A2114E7000B653E /* PostClassicalQuizViewController.swift in Sources */,
+				9D6009C82EDE1BA300B9DF8B /* QuizContent.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
 				9D10BBF32A2241E0000B653E /* ModernTabController.swift in Sources */,
 				9DF863A22ED249BF00AB1FB8 /* ReadingView.swift in Sources */,
