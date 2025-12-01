@@ -41,6 +41,10 @@
 		9D45A9B22A1BB2B9006524DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A9B12A1BB2B9006524DA /* Assets.xcassets */; };
 		9D6005862ED79C0800B9DF8B /* GlossaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */; };
 		9D6009C82EDE1BA300B9DF8B /* QuizContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009C72EDE1BA300B9DF8B /* QuizContent.swift */; };
+		9D6009CA2EDE22B900B9DF8B /* QuizQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009C92EDE22B900B9DF8B /* QuizQuestionView.swift */; };
+		9D6009CC2EDE22EC00B9DF8B /* QuizResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009CB2EDE22EC00B9DF8B /* QuizResultsView.swift */; };
+		9D6009CE2EDE231100B9DF8B /* EmptyQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009CD2EDE231100B9DF8B /* EmptyQuizView.swift */; };
+		9D6009D02EDE234900B9DF8B /* QuizRowChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6009CF2EDE234900B9DF8B /* QuizRowChoiceView.swift */; };
 		9D69DF8F2AB617BC002E4CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */; };
 		9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */; };
 		9D6BF0F42A20EC1900FA160E /* AncientReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */; };
@@ -98,6 +102,10 @@
 		9D45A9B62A1BB2B9006524DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6005852ED79C0800B9DF8B /* GlossaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryRowView.swift; sourceTree = "<group>"; };
 		9D6009C72EDE1BA300B9DF8B /* QuizContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContent.swift; sourceTree = "<group>"; };
+		9D6009C92EDE22B900B9DF8B /* QuizQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionView.swift; sourceTree = "<group>"; };
+		9D6009CB2EDE22EC00B9DF8B /* QuizResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsView.swift; sourceTree = "<group>"; };
+		9D6009CD2EDE231100B9DF8B /* EmptyQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyQuizView.swift; sourceTree = "<group>"; };
+		9D6009CF2EDE234900B9DF8B /* QuizRowChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRowChoiceView.swift; sourceTree = "<group>"; };
 		9D69DF8E2AB617BC002E4CDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6BF0F12A20EBA900FA160E /* AncientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientTabBarController.swift; sourceTree = "<group>"; };
 		9D6BF0F32A20EC1900FA160E /* AncientReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientReadViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +293,27 @@
 			path = Glossary;
 			sourceTree = "<group>";
 		};
+		9D6009D12EDE257800B9DF8B /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */,
+				9D6009C92EDE22B900B9DF8B /* QuizQuestionView.swift */,
+				9D6009CB2EDE22EC00B9DF8B /* QuizResultsView.swift */,
+				9D6009CD2EDE231100B9DF8B /* EmptyQuizView.swift */,
+				9D6009CF2EDE234900B9DF8B /* QuizRowChoiceView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		9D6009D22EDE25A300B9DF8B /* RootViews */ = {
+			isa = PBXGroup;
+			children = (
+				9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */,
+				9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */,
+			);
+			path = RootViews;
+			sourceTree = "<group>";
+		};
 		9D6BF0F02A1FE8F900FA160E /* Ancient History */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,11 +358,10 @@
 		9DF863982ED2409800AB1FB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9DF863962ED2404900AB1FB8 /* WorldHistoryRootView.swift */,
-				9DF8639F2ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift */,
+				9D6009D22EDE25A300B9DF8B /* RootViews */,
 				9DF863A12ED249BF00AB1FB8 /* ReadingView.swift */,
 				9D6005872ED79E5700B9DF8B /* Glossary */,
-				9DF863A52ED24C2B00AB1FB8 /* QuizView.swift */,
+				9D6009D12EDE257800B9DF8B /* Quiz */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -441,10 +469,12 @@
 				9D10BBD22A210774000B653E /* PostClassicalVocabularyTableViewController.swift in Sources */,
 				9D162D402A1E89B60023A80D /* QuizBrain.swift in Sources */,
 				9D6BF0F72A20EDEC00FA160E /* AncientReadingText.swift in Sources */,
+				9D6009CE2EDE231100B9DF8B /* EmptyQuizView.swift in Sources */,
 				9DF8646C2ED2603700AB1FB8 /* ReadingContent.swift in Sources */,
 				9D10BBD42A210C3D000B653E /* PostClassicalQuizBrain.swift in Sources */,
 				9DF863A62ED24C2B00AB1FB8 /* QuizView.swift in Sources */,
 				9D10BBD02A2103A0000B653E /* PostClassicalReadViewController.swift in Sources */,
+				9D6009CC2EDE22EC00B9DF8B /* QuizResultsView.swift in Sources */,
 				9D6BF1012A20F8D900FA160E /* AncientQuizViewController.swift in Sources */,
 				9DB966D32AD319200067F269 /* CustomAlertView.swift in Sources */,
 				9DF863972ED2404900AB1FB8 /* WorldHistoryRootView.swift in Sources */,
@@ -459,10 +489,12 @@
 				9D162D502A1FD3620023A80D /* AnimatedLaunchViewController.swift in Sources */,
 				9D6BF0F22A20EBA900FA160E /* AncientTabBarController.swift in Sources */,
 				9DF863A02ED2481A00AB1FB8 /* PeriodToolbarMenuView.swift in Sources */,
+				9D6009D02EDE234900B9DF8B /* QuizRowChoiceView.swift in Sources */,
 				9D10BBF02A22415B000B653E /* ModernQuizBrain.swift in Sources */,
 				9D10BBCE2A210319000B653E /* PostClassicalReadingText.swift in Sources */,
 				9DF8639B2ED240F900AB1FB8 /* HistoryPeriod.swift in Sources */,
 				9D10BC012A2391C2000B653E /* ContemporaryTabController.swift in Sources */,
+				9D6009CA2EDE22B900B9DF8B /* QuizQuestionView.swift in Sources */,
 				9D10BBD62A2114E7000B653E /* PostClassicalQuizViewController.swift in Sources */,
 				9D6009C82EDE1BA300B9DF8B /* QuizContent.swift in Sources */,
 				9D45A9A82A1BB2B8006524DA /* SceneDelegate.swift in Sources */,
