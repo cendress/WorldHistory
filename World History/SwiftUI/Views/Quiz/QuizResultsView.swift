@@ -19,15 +19,10 @@ struct QuizResultsView: View {
     }
 
     var body: some View {
-        ScrollView {
             VStack(spacing: 24) {
-                Text("Quiz Complete")
-                    .font(.largeTitle.weight(.bold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
                 Text(periodName)
                     .font(.title3.weight(.semibold))
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
                 // Score card
@@ -40,39 +35,54 @@ struct QuizResultsView: View {
 
                     Text("\(percentage)%")
                         .font(.title2.weight(.semibold))
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                 }
+                .foregroundStyle(Color("TextColor"))
                 .frame(maxWidth: .infinity)
                 .padding(24)
                 .background(
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
-                        .fill(Color(.systemBackground))
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color("BackgroundColor2"))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color("TextColor"), lineWidth: 1)
+                        )
                 )
                 .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 4)
 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("What’s next?")
                         .font(.headline)
+                        .foregroundStyle(Color("TextColor"))
                     Text("You can retake the quiz for this period or switch to another period from the menu in the top-right.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Spacer()
 
-                Button(action: onRetake) {
+                Button(action: {
+                    Haptic.medium()
+                    onRetake()
+                }) {
                     Text("Retake Quiz")
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
+                        .background(Color("BackgroundColor2"))
+                        .foregroundStyle(Color("TextColor"))
+                        .cornerRadius(16)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color("TextColor"), lineWidth: 1)
+                        )
                 }
-
-                Spacer(minLength: 24)
+                .padding(.bottom, 32)
             }
-        }
+            .padding(.top, 32)
+        
     }
 }
 

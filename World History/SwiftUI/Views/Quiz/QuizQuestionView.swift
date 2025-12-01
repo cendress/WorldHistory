@@ -21,7 +21,7 @@ struct QuizQuestionView: View {
     let onRestart: () -> Void
 
     var body: some View {
-            VStack(spacing: 32) {
+            VStack(spacing: 24) {
                 // Progress
                 if hasQuestions {
                     VStack(alignment: .leading, spacing: 8) {
@@ -64,6 +64,10 @@ struct QuizQuestionView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 16)
                         .fill(Color("BackgroundColor2"))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color("TextColor"), lineWidth: 1)
+                        )
                 )
                 .shadow(color: Color.black.opacity(0.08), radius: 6, x: 0, y: 3)
 
@@ -98,6 +102,10 @@ struct QuizQuestionView: View {
                     }
                     .disabled(selectedIndex == nil && !isAnswered)
                     .opacity((selectedIndex == nil && !isAnswered) ? 0.5 : 1.0)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color("TextColor"), lineWidth: 1)
+                    )
 
                     if hasQuestions {
                         Button(role: .destructive, action: {
@@ -111,6 +119,7 @@ struct QuizQuestionView: View {
                 }
                 .padding(.bottom, 32)
             }
+            .padding(.top, 32)
             .frame(maxWidth: .infinity)
         
     }
