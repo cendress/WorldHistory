@@ -117,9 +117,8 @@ struct QuizQuestionView: View {
                         }
                     }
                 }
-                .padding(.bottom, 32)
             }
-            .padding(.top, 32)
+            .padding(.vertical, 16)
             .frame(maxWidth: .infinity)
         
     }

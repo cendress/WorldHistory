@@ -79,10 +79,8 @@ struct QuizResultsView: View {
                                 .stroke(Color("TextColor"), lineWidth: 1)
                         )
                 }
-                .padding(.bottom, 32)
             }
-            .padding(.top, 32)
-        
+            .padding(.vertical, 16)
     }
 }
 

@@ -60,7 +60,7 @@ struct QuizRowChoiceView: View {
         )
         .overlay(
             RoundedRectangle(cornerRadius: 16)
-                .stroke(borderColor, lineWidth: 1.5)
+                .stroke(Color("TextColor"), lineWidth: 0.5)
         )
         .shadow(color: Color.black.opacity(0.06), radius: 3, x: 0, y: 2)
         .contentShape(Rectangle())
