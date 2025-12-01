@@ -19,6 +19,16 @@ struct QuizQuestionView: View {
     let onSelectChoice: (Int) -> Void
     let onSubmit: () -> Void
     let onRestart: () -> Void
+    
+    private var primaryButtonTitle: String {
+        if !isAnswered {
+            return "Submit Answer"
+        } else if currentIndex == totalQuestions - 1 {
+            return "Finish"
+        } else {
+            return "Next Question"
+        }
+    }
 
     var body: some View {
             VStack(spacing: 24) {
@@ -94,7 +104,7 @@ struct QuizQuestionView: View {
                         Haptic.light()
                         onSubmit()
                     }) {
-                        Text(isAnswered ? "Next Question" : "Submit Answer")
+                        Text(primaryButtonTitle)
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .padding()
