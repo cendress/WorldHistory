@@ -19,7 +19,8 @@ struct QuizRowChoiceView: View {
             if isCorrectChoice { return Color.green }
             if isIncorrectSelection { return Color.red }
         }
-        return isSelected ? Color.blue : Color.black.opacity(0.1)
+        
+        return isSelected ? Color("TextColor") : Color.black.opacity(0.1)
     }
     
     private var backgroundColor: Color {
@@ -27,39 +28,38 @@ struct QuizRowChoiceView: View {
             if isCorrectChoice { return Color.green.opacity(0.1) }
             if isIncorrectSelection { return Color.red.opacity(0.05) }
         }
-        return isSelected ? Color.blue.opacity(0.1) : Color(.systemBackground)
+        return isSelected ? Color("TextColor").opacity(0.1) : Color("BackgroundColor2")
     }
     
     var body: some View {
-        HStack(alignment: .center, spacing: 12) {
+        HStack {
             Text(text)
                 .font(.subheadline)
-                .foregroundColor(.primary)
-                .multilineTextAlignment(.leading)
+                .foregroundStyle(Color("TextColor"))
             
             Spacer()
             
             if showFeedback {
                 if isCorrectChoice {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(.green)
+                        .foregroundStyle(.green)
                 } else if isIncorrectSelection {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.red)
+                        .foregroundStyle(.red)
                 }
             } else if isSelected {
                 Image(systemName: "checkmark.circle")
-                    .foregroundColor(.blue)
+                    .foregroundStyle(Color("TextColor"))
             }
         }
-        .padding(.vertical, 10)
+        .padding(.vertical, 14)
         .padding(.horizontal, 12)
         .background(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
+            RoundedRectangle(cornerRadius: 16)
                 .fill(backgroundColor)
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
+            RoundedRectangle(cornerRadius: 16)
                 .stroke(borderColor, lineWidth: 1.5)
         )
         .shadow(color: Color.black.opacity(0.06), radius: 3, x: 0, y: 2)

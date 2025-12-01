@@ -21,7 +21,6 @@ struct QuizQuestionView: View {
     let onRestart: () -> Void
 
     var body: some View {
-        ScrollView {
             VStack(spacing: 32) {
                 // Progress
                 if hasQuestions {
@@ -38,7 +37,7 @@ struct QuizQuestionView: View {
                 }
 
                 // Question card
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 32) {
                     Text(question.prompt)
                         .font(.headline)
                         .foregroundStyle(Color("TextColor"))
@@ -73,10 +72,11 @@ struct QuizQuestionView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Explanation")
                             .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Color("TextColor"))
                         Text(explanation)
                             .font(.subheadline)
+                            .foregroundStyle(.secondary)
                     }
-                    .foregroundStyle(Color("TextColor"))
                     .transition(.opacity)
                 }
                 
@@ -109,9 +109,10 @@ struct QuizQuestionView: View {
                         }
                     }
                 }
+                .padding(.bottom, 32)
             }
             .frame(maxWidth: .infinity)
-        }
+        
     }
 }
 

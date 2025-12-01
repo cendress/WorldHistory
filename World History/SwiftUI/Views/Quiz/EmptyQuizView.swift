@@ -11,19 +11,22 @@ struct EmptyQuizView: View {
     let periodName: String
 
     var body: some View {
-        ScrollView {
+        ZStack {
+            Color("BackgroundColor")
+                .ignoresSafeArea()
+            
             VStack(spacing: 16) {
                 Text("No quiz questions yet.")
+                    .foregroundStyle(Color("TextColor"))
                     .font(.headline)
                     .padding(.top, 8)
-
+                
                 Text("Questions for \(periodName) will appear here when they are added.")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                    .multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.center)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
+            .padding(.horizontal, 48)
         }
     }
 }

@@ -72,7 +72,6 @@ struct QuizResultsView: View {
 
                 Spacer(minLength: 24)
             }
-            .padding()
         }
     }
 }

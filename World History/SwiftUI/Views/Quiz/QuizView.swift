@@ -66,6 +66,7 @@ struct QuizView: View {
                 }
             }
             .navigationTitle("Quiz")
+            .padding(.horizontal, 16)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     PeriodToolbarMenuView()
