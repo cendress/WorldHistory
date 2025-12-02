@@ -75,7 +75,7 @@ struct QuizQuestionView: View {
             .padding(16)
             .background(
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(Color("BackgroundColor2"))
+                    .fill(Color("BackgroundColor2").opacity(0.6))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(Color("TextColor"), lineWidth: 1)

@@ -21,21 +21,22 @@ struct GlossaryRowView: View {
 
                 Image(systemName: item.isExpanded ? "chevron.up" : "chevron.down")
                     .font(.subheadline)
-                    .foregroundStyle(Color("TextColor"))
+                    .foregroundStyle(Color("TextColor").opacity(0.8))
             }
 
             if item.isExpanded {
                 Text(item.definition)
                     .font(.subheadline)
-                    .foregroundStyle(Color("TextColor"))
+                    .foregroundStyle(Color("TextColor").opacity(0.8))
                     .fixedSize(horizontal: false, vertical: true)
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
-        .padding(18)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 20)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color("BackgroundColor2"))
+                .fill(Color("BackgroundColor2").opacity(0.85))
         )
         .overlay(
             RoundedRectangle(cornerRadius: 16)
